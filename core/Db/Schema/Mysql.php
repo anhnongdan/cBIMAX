@@ -19,6 +19,9 @@ use Piwik\DbHelper;
  * [Thangnt 2016-10-27] Change temporary table names to 'temp_archive_(blob|numeric)'
  * to make table name processing easier.
  * 
+ * [Thangnt 2017-02-20] log_visit and log_link_visit tables have changed, may affect rotation scripts
+ *
+ *
  * MySQL schema
  */
 class Mysql implements SchemaInterface
@@ -38,7 +41,7 @@ class Mysql implements SchemaInterface
         $tables = array(
             'user'    => "CREATE TABLE {$prefixTables}user (
                           login VARCHAR(100) NOT NULL,
-                          password CHAR(32) NOT NULL,
+                          password VARCHAR(255) NOT NULL,
                           alias VARCHAR(45) NOT NULL,
                           email VARCHAR(100) NOT NULL,
                           token_auth CHAR(32) NOT NULL,
@@ -79,11 +82,21 @@ class Mysql implements SchemaInterface
                             ) ENGINE=$engine DEFAULT CHARSET=utf8
             ",
 
-            'site_setting'    => "CREATE TABLE {$prefixTables}site_setting (
-                          idsite INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+            'plugin_setting' => "CREATE TABLE {$prefixTables}plugin_setting (
+                          `plugin_name` VARCHAR(60) NOT NULL,
                           `setting_name` VARCHAR(255) NOT NULL,
                           `setting_value` LONGTEXT NOT NULL,
-                              PRIMARY KEY(idsite, setting_name)
+                          `user_login` VARCHAR(100) NOT NULL DEFAULT '',
+                              INDEX(plugin_name, user_login)
+                            ) ENGINE=$engine DEFAULT CHARSET=utf8
+            ",
+
+            'site_setting'    => "CREATE TABLE {$prefixTables}site_setting (
+                          idsite INTEGER(10) UNSIGNED NOT NULL,
+                          `plugin_name` VARCHAR(60) NOT NULL,
+                          `setting_name` VARCHAR(255) NOT NULL,
+                          `setting_value` LONGTEXT NOT NULL,
+                              INDEX(idsite, plugin_name)
                             ) ENGINE=$engine DEFAULT CHARSET=utf8
             ",
 
@@ -98,6 +111,7 @@ class Mysql implements SchemaInterface
                               `idsite` int(11) NOT NULL,
                               `idgoal` int(11) NOT NULL,
                               `name` varchar(50) NOT NULL,
+                              `description` varchar(255) NOT NULL DEFAULT '',
                               `match_attribute` varchar(20) NOT NULL,
                               `pattern` varchar(255) NOT NULL,
                               `pattern_type` varchar(10) NOT NULL,
@@ -131,7 +145,7 @@ class Mysql implements SchemaInterface
             ",
 
             'log_visit'   => "CREATE TABLE {$prefixTables}log_visit (
-                              idvisit INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+                              idvisit BIGINT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
                               idsite INTEGER(10) UNSIGNED NOT NULL,
                               idvisitor BINARY(8) NOT NULL,
                               visit_last_action_time DATETIME NOT NULL,
@@ -148,7 +162,7 @@ class Mysql implements SchemaInterface
                                         idsite int(10) UNSIGNED NOT NULL,
                                         idvisitor BINARY(8) NOT NULL,
                                         server_time DATETIME NOT NULL,
-                                        idvisit INTEGER(10) UNSIGNED NOT NULL,
+                                        idvisit BIGINT(10) UNSIGNED NOT NULL,
                                         idorder varchar(100) NOT NULL,
                                         idaction_sku INTEGER(10) UNSIGNED NOT NULL,
                                         idaction_name INTEGER(10) UNSIGNED NOT NULL,
@@ -166,12 +180,12 @@ class Mysql implements SchemaInterface
             ",
 
             'log_conversion'      => "CREATE TABLE `{$prefixTables}log_conversion` (
-                                      idvisit int(10) unsigned NOT NULL,
+                                      idvisit BIGINT(10) unsigned NOT NULL,
                                       idsite int(10) unsigned NOT NULL,
                                       idvisitor BINARY(8) NOT NULL,
                                       server_time datetime NOT NULL,
-                                      idaction_url int(11) default NULL,
-                                      idlink_va int(11) default NULL,
+                                      idaction_url INTEGER(10) UNSIGNED default NULL,
+                                      idlink_va BIGINT(10) UNSIGNED default NULL,
                                       idgoal int(10) NOT NULL,
                                       buster int unsigned NOT NULL,
                                       idorder varchar(100) default NULL,
@@ -184,12 +198,12 @@ class Mysql implements SchemaInterface
             ",
 
             'log_link_visit_action' => "CREATE TABLE {$prefixTables}log_link_visit_action (
-                                        idlink_va INTEGER(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+                                        idlink_va BIGINT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
                                         idsite int(10) UNSIGNED NOT NULL,
                                         idvisitor BINARY(8) NOT NULL,
-                                        idvisit INTEGER(10) UNSIGNED NOT NULL,
+                                        idvisit BIGINT(10) UNSIGNED NOT NULL,
                                         idaction_url_ref INTEGER(10) UNSIGNED NULL DEFAULT 0,
-                                        idaction_name_ref INTEGER(10) UNSIGNED NOT NULL,
+                                        idaction_name_ref INTEGER(10) UNSIGNED NULL,
                                         custom_float FLOAT NULL DEFAULT NULL,
                                           PRIMARY KEY(idlink_va),
                                           INDEX index_idvisit(idvisit)

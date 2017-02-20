@@ -90,6 +90,8 @@ backends[] = file
 ; Redis server configuration.
 host = "127.0.0.1"
 port = 6379
+; instead of host and port a unix socket path can be configured
+unix_socket = ""
 timeout = 0.0
 password = ""
 database = 14
@@ -485,6 +487,7 @@ assume_secure_protocol = 0
 multi_server_environment = 0
 
 ; List of proxy headers for client IP addresses
+; Piwik will determine the user IP by extracting the first IP address found in this proxy header.
 ;
 ; CloudFlare (CF-Connecting-IP)
 ;proxy_client_headers[] = HTTP_CF_CONNECTING_IP
@@ -731,6 +734,11 @@ bulk_requests_use_transaction = 1
 ; DO NOT USE THIS SETTING ON PUBLIC PIWIK SERVERS
 tracking_requests_require_authentication = 1
 
+; By default, Piwik accepts only tracking requests for up to 1 day in the past. For tracking requests with a custom date
+; date is older than 1 day, Piwik requires an authenticated tracking requests. By setting this config to another value
+; You can change how far back Piwik will track your requests without authentication. The configured value is in seconds.
+tracking_requests_require_authentication_when_custom_timestamp_newer_than = 86400;
+
 [Segments]
 ; Reports with segmentation in API requests are processed in real time.
 ; On high traffic websites it is recommended to pre-process the data
@@ -813,7 +821,7 @@ Plugins[] = VisitFrequency
 Plugins[] = VisitTime
 Plugins[] = VisitorInterest
 Plugins[] = ExampleAPI
-Plugins[] = ExampleRssWidget
+Plugins[] = RssWidget
 Plugins[] = Feedback
 Plugins[] = Monolog
 
@@ -836,7 +844,6 @@ Plugins[] = SegmentEditor
 Plugins[] = Insights
 Plugins[] = Morpheus
 Plugins[] = Contents
-Plugins[] = TestRunner
 Plugins[] = BulkTracking
 Plugins[] = Resolution
 Plugins[] = DevicePlugins

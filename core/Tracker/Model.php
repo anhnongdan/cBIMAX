@@ -19,7 +19,7 @@ class Model
     {
         $fields = implode(", ", array_keys($visitAction));
         $values = Common::getSqlStringFieldsArray($visitAction);
-        $table  = Common::prefixTable('log_link_visit_action', 1);
+        $table  = Common::prefixTable('log_link_visit_action');
 
         $sql  = "INSERT INTO $table ($fields) VALUES ($values)";
         $bind = array_values($visitAction);
@@ -321,7 +321,7 @@ class Model
         list($updateParts, $sqlBind) = $this->fieldsToQuery($valuesToUpdate);
 
         $parts = implode($updateParts, ', ');
-        $table = Common::prefixTable('log_link_visit_action', 1);
+        $table = Common::prefixTable('log_link_visit_action');
 
         $sqlQuery = "UPDATE $table SET $parts WHERE idlink_va = ?";
 

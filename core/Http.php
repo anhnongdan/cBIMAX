@@ -163,7 +163,7 @@ class Http
         $fileLength = 0;
 
         if (!empty($requestBody) && is_array($requestBody)) {
-            $requestBody = http_build_query($requestBody);
+            $requestBody = self::buildQuery($requestBody);
         }
 
         // Piwik services behave like a proxy, so we should act like one.
@@ -630,6 +630,11 @@ class Http
         }
     }
 
+    public static function buildQuery($params)
+    {
+        return http_build_query($params, '', '&');
+    }
+
     private static function buildHeadersForPost($requestBody)
     {
         $postHeader  = "Content-Type: application/x-www-form-urlencoded\r\n";
@@ -788,9 +793,7 @@ class Http
      */
     public static function configCurlCertificate(&$ch)
     {
-        if (file_exists(PIWIK_INCLUDE_PATH . '/core/DataFiles/cacert.pem')) {
-            @curl_setopt($ch, CURLOPT_CAINFO, PIWIK_INCLUDE_PATH . '/core/DataFiles/cacert.pem');
-        }
+        @curl_setopt($ch, CURLOPT_CAINFO, PIWIK_INCLUDE_PATH . '/core/DataFiles/cacert.pem');
     }
 
     public static function getUserAgent()

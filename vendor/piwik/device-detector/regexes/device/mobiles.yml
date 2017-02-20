@@ -3477,7 +3477,7 @@ Siemens:
 
 # Samsung
 Samsung:
-  regex: 'SAMSUNG|Maple |SC-(?:02C|04E|01F)|N[57]100|N5110|N9100|S(?:CH|GH|PH|EC|AM|HV|HW|M)-|SMART-TV|GT-|Galaxy|(?:portalmmm|o2imode)/2\.0 [SZ]|sam[rua]|vollo Vi86[);/ ]|(?:OTV-)?SMT-E5015|ISW11SC'
+  regex: 'SAMSUNG|Maple |SC-(?:02[CH]|04E|01F)|N[57]100|N5110|N9100|S(?:CH|GH|PH|EC|AM|HV|HW|M)-|SMART-TV|GT-|Galaxy|(?:portalmmm|o2imode)/2\.0 [SZ]|sam[rua]|vollo Vi86[);/ ]|(?:OTV-)?SMT-E5015|ISW11SC'
   device: 'smartphone'
   models:
     # explicit tv models
@@ -3771,7 +3771,7 @@ Samsung:
       model: 'GALAXY S5 Neo'
     - regex: '(?:SAMSUNG-)?SM-G920F'
       model: 'GALAXY S6'
-    - regex: '(?:SAMSUNG-)?SM-G935F'
+    - regex: '(?:SAMSUNG-)?SM-G935F|SC-02H'
       model: 'GALAXY S7 edge'
     - regex: '(?:SAMSUNG-)?SCH-I200'
       model: 'GALAXY Stellar'
@@ -5027,6 +5027,12 @@ Fly:
     - regex: 'MERIDIAN-([a-z0-9]+)'
       model: '$1'
 
+# Devices with undectable brand, but detectable model
+Unknown:
+  regex: 'WebTV/(\d+\.\d+)'
+  device: 'tv'
+  model: 'Web TV'
+
 # Zeemi
 Zeemi:
   regex: 'ZEEMI[ _-]'
@@ -5133,19 +5139,3 @@ OnePlus:
       model: 'Two'
     - regex: 'E1003'
       model: 'X'
-
-# [Thangnt 2016-11-29]
-
-# Devices with undectable brand, but detectable model
-Unknown:
-  regex: 'WebTV/(\d+\.\d+)|^Lavf|stagefright|ExoPlayer|TalkTV|Mobile Safari|vnTalk'
-  device: 'smartphone'
-  models:
-    - regex: 'WebTV/(\d+\.\d+)'
-      device: 'tv'
-      model: 'Web TV'
-      
-#    - regex: '^Lavf'
-#      device: 'smartphone'
-#    - regex: 'stagefright|ExoPlayer|TalkTV|Mobile Safari|vnTalk'
-#      device: 'smartphone'

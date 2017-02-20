@@ -14,6 +14,8 @@ use Piwik\API\Request;
 use Piwik\Container\StaticContainer;
 use Piwik\Exception\AuthenticationFailedException;
 use Piwik\Exception\DatabaseSchemaIsNewerThanCodebaseException;
+use Piwik\Exception\PluginDeactivatedException;
+use Piwik\Exception\StylesheetLessCompileException;
 use Piwik\Http\ControllerResolver;
 use Piwik\Http\Router;
 use Piwik\Plugins\CoreAdminHome\CustomLogo;
@@ -72,11 +74,11 @@ class FrontController extends Singleton
 
     /**
      * @param $lastError
-     * @return mixed|void
+     * @return string
      * @throws AuthenticationFailedException
      * @throws Exception
      */
-    private static function generateSafeModeOutput($lastError)
+    private static function generateSafeModeOutputFromError($lastError)
     {
         Common::sendResponseCode(500);
 
@@ -93,9 +95,23 @@ class FrontController extends Singleton
     }
 
     /**
+     * @param Exception $e
+     * @return string
+     */
+    private static function generateSafeModeOutputFromException($e)
+    {
+        $error = array(
+            'message' => $e->getMessage(),
+            'file' => $e->getFile(),
+            'line' => $e->getLine()
+        );
+        return self::generateSafeModeOutputFromError($error);
+    }
+
+    /**
      * Executes the requested plugin controller method.
      *
-     * @throws Exception|\Piwik\PluginDeactivatedException in case the plugin doesn't exist, the action doesn't exist,
+     * @throws Exception|\Piwik\Exception\PluginDeactivatedException in case the plugin doesn't exist, the action doesn't exist,
      *                                                     there is not enough permission, etc.
      *
      * @param string $module The name of the plugin whose controller to execute, eg, `'UserCountryMap'`.
@@ -132,6 +148,15 @@ class FrontController extends Singleton
              * @param \Piwik\NoAccessException $exception The exception that was caught.
              */
             Piwik::postEvent('User.isNotAuthorized', array($exception), $pending = true);
+        } catch (\Twig_Error_Runtime $e) {
+            echo $this->generateSafeModeOutputFromException($e);
+            exit;
+        } catch(StylesheetLessCompileException $e) {
+            echo $this->generateSafeModeOutputFromException($e);
+            exit;
+        } catch(\Error $e) {
+            echo $this->generateSafeModeOutputFromException($e);
+            exit;
         }
     }
 
@@ -201,7 +226,7 @@ class FrontController extends Singleton
     {
         $lastError = error_get_last();
         if (!empty($lastError) && $lastError['type'] == E_ERROR) {
-            $message = self::generateSafeModeOutput($lastError);
+            $message = self::generateSafeModeOutputFromError($lastError);
             echo $message;
         }
     }
@@ -307,7 +332,12 @@ class FrontController extends Singleton
 
         $this->throwIfPiwikVersionIsOlderThanDBSchema();
 
-        \Piwik\Plugin\Manager::getInstance()->installLoadedPlugins();
+        if (empty($_GET['module'])
+            || empty($_GET['action'])
+            || $_GET['module'] !== 'Installation'
+            || !in_array($_GET['action'], array('getInstallationCss', 'getInstallationJs'))) {
+            \Piwik\Plugin\Manager::getInstance()->installLoadedPlugins();
+        }
 
         // ensure the current Piwik URL is known for later use
         if (method_exists('Piwik\SettingsPiwik', 'getPiwikUrl')) {

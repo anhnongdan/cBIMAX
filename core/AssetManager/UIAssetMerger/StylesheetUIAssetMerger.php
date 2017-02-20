@@ -12,6 +12,8 @@ use Exception;
 use lessc;
 use Piwik\AssetManager\UIAsset;
 use Piwik\AssetManager\UIAssetMerger;
+use Piwik\Common;
+use Piwik\Exception\StylesheetLessCompileException;
 use Piwik\Piwik;
 
 class StylesheetUIAssetMerger extends UIAssetMerger
@@ -20,6 +22,11 @@ class StylesheetUIAssetMerger extends UIAssetMerger
      * @var lessc
      */
     private $lessCompiler;
+
+    /**
+     * @var UIAsset[]
+     */
+    private $cssAssetsToReplace = array();
 
     public function __construct($mergedAsset, $assetFetcher, $cacheBuster)
     {
@@ -33,9 +40,58 @@ class StylesheetUIAssetMerger extends UIAssetMerger
         // note: we're using setImportDir on purpose (not addImportDir)
         $this->lessCompiler->setImportDir(PIWIK_USER_PATH);
         $concatenatedAssets = $this->getConcatenatedAssets();
-        return $this->lessCompiler->compile($concatenatedAssets);
+
+        $this->lessCompiler->setFormatter('classic');
+        try {
+            $compiled = $this->lessCompiler->compile($concatenatedAssets);
+        } catch(\Exception $e) {
+            throw new StylesheetLessCompileException($e->getMessage());
+        }
+
+        foreach ($this->cssAssetsToReplace as $asset) {
+            // to fix #10173
+            $cssPath = $asset->getAbsoluteLocation();
+            $cssContent = $this->processFileContent($asset);
+            $compiled = str_replace($this->getCssStatementForReplacement($cssPath), $cssContent, $compiled);
+        }
+
+        $this->mergedContent = $compiled;
+        $this->cssAssetsToReplace = array();
+
+        return $compiled;
+    }
+    
+    private function getCssStatementForReplacement($path)
+    {
+        return '.nonExistingSelectorOnlyForReplacementOfCssFiles { display:"' . $path . '"; }';
     }
 
+    protected function concatenateAssets()
+    {
+        $mergedContent = '';
+
+        foreach ($this->getAssetCatalog()->getAssets() as $uiAsset) {
+            $uiAsset->validateFile();
+
+            try {
+                $path = $uiAsset->getAbsoluteLocation();
+            } catch (Exception $e) {
+                $path = null;
+            }
+
+            if (!empty($path) && Common::stringEndsWith($path, '.css')) {
+                // to fix #10173
+                $mergedContent .= "\n" . $this->getCssStatementForReplacement($path) . "\n";
+                $this->cssAssetsToReplace[] = $uiAsset;
+            } else {
+                $content = $this->processFileContent($uiAsset);
+                $mergedContent .= $this->getFileSeparator() . $content;
+            }
+        }
+
+        $this->mergedContent = $mergedContent;
+    }
+    
     /**
      * @return lessc
      * @throws Exception
