@@ -916,7 +916,7 @@ class CronArchive
             // when --force-all-websites option,
             // also forces to archive last52 days to be safe
             || $this->shouldArchiveAllSites) {
-            $processDaysSince = false;
+            $processHoursSince = false;
         }
 
         $date = $this->getApiDateParameter($idSite, "hour", $processHoursSince);
@@ -979,7 +979,7 @@ class CronArchive
         $this->visitsToday += $visitsToday;
         $this->websitesWithVisitsSinceLastRun++;
 
-        $this->archiveReportsFor($idSite, "hour", $this->getApiDateParameter($idSite, "hour", $processDaysSince), $archiveSegments = true, $timer, $visitsToday, $visitsLastDays);
+        $this->archiveReportsFor($idSite, "hour", $this->getApiDateParameter($idSite, "hour", $processHoursSince), $archiveSegments = true, $timer, $visitsToday, $visitsLastDays);
 
         return true;
     }
