@@ -17,7 +17,6 @@ use Piwik\DataTable\Row;
 use Piwik\Piwik;
 use Piwik\Translation\Translator;
 use Piwik\View;
-use Piwik\Plugin\Manager;
 
 class Controller extends \Piwik\Plugin\Controller
 {
@@ -33,22 +32,18 @@ class Controller extends \Piwik\Plugin\Controller
         $this->translator = $translator;
     }
 
-    /*#Thang 05/30:
-     * Called through Front Controller, action:index
-     */
-    public function index() {
+    public function index()
+    {
         return $this->getSitesInfo($isWidgetized = false);
     }
 
-    /*#Thang 05/30:
-     * Called alone (as with the debug URL) 
-     */
-    public function standalone() {
+    public function standalone()
+    {
         return $this->getSitesInfo($isWidgetized = true);
     }
 
-    //Called after getSiteInfo()
-    public function getAllWithGroups() {
+    public function getAllWithGroups()
+    {
         Piwik::checkUserHasSomeViewAccess();
 
         $period  = Common::getRequestVar('period', null, 'string');
