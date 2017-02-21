@@ -17,6 +17,7 @@ use Piwik\DataTable\Row;
 use Piwik\Piwik;
 use Piwik\Translation\Translator;
 use Piwik\View;
+use Piwik\Plugin\Manager;
 
 class Controller extends \Piwik\Plugin\Controller
 {
