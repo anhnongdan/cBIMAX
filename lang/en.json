@@ -279,7 +279,7 @@
         "OverlayRowActionTooltip": "See analytics data directly on your website (opens new tab)",
         "OverlayRowActionTooltipTitle": "Open Page Overlay",
         "Overview": "Overview",
-        "Pages": "Pages (Web)",
+        "Pages": "URLs",
         "Pagination": "%1$s - %2$s of %3$s",
         "PaginationWithoutTotal": "%1$s - %2$s",
         "ParameterMustIntegerBetween": "Parameter %1$s must be an integer value between %2$s and %3$s.",
@@ -419,7 +419,9 @@
         "YouAreCurrentlyUsing": "You are currently using Piwik %s.",
         "YouAreViewingDemoShortMessage": "You are viewing the demo of Piwik",
         "YouMustBeLoggedIn": "You must be logged in to access this functionality.",
-        "YourChangesHaveBeenSaved": "Your changes have been saved."
+        "YourChangesHaveBeenSaved": "Your changes have been saved.",
+	
+	"SbdCdnAnalyzer": "BiMAX - CDN Analyzer"
     },
     "Mobile": {
         "AboutPiwikMobile": "About Piwik Mobile",
