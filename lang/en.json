@@ -419,9 +419,7 @@
         "YouAreCurrentlyUsing": "You are currently using Piwik %s.",
         "YouAreViewingDemoShortMessage": "You are viewing the demo of Piwik",
         "YouMustBeLoggedIn": "You must be logged in to access this functionality.",
-        "YourChangesHaveBeenSaved": "Your changes have been saved.",
-
-	"cBimaxHint": "BiMAX - CDN Analyzer"
+        "YourChangesHaveBeenSaved": "Your changes have been saved."
     },
     "Mobile": {
         "AboutPiwikMobile": "About Piwik Mobile",
