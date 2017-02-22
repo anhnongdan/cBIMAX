@@ -975,3 +975,15 @@
 - regex: 'Dorado WAP-Browser[/ ](\d+[\.\d]+)'
   name: 'Dorado'
   version: '$1'
+  
+#[Thangnt 2016-11-30]
+- regex: '^ExoPlayer[\w, ]+(?:[/]([\d\.]+))?'
+  name: 'ExoPlayer'
+  version: '$1'
+- regex: '^stagefright[/]([\d\.]+)'
+  name: 'Stagefright'
+  version: '$1'
+  #[Thangnt 2016-11-30] The regex should starts with (^) patterns, exclude browser and app use these lib
+- regex: '^Lavf[/]([\d\.]+)'
+  name: 'Android Lavf Library'
+  version: '$1'

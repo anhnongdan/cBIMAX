@@ -168,7 +168,10 @@ class Browser extends ClientParserAbstract
         'WO' => 'wOSBrowser',
         'WT' => 'WeTab Browser',
         'YA' => 'Yandex Browser',
-        'XI' => 'Xiino'
+        'XI' => 'Xiino',
+        'EX' => 'ExoPlayer',
+        'SI' => 'Stagefright',
+        'AL' => 'Android Lavf Library'
     );
 
     /**

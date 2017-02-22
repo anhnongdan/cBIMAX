@@ -94,6 +94,10 @@
   name: 'Android'
   version: ''
   
+  #[Thangnt 2016-11-30] The below mediaplayers and apps run on Android
+- regex: '^Lavf|stagefright|ExoPlayer'
+  name: 'Android'
+  version: ''
   
 ##########
 # AmigaOS

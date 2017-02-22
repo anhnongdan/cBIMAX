@@ -5139,3 +5139,19 @@ OnePlus:
       model: 'Two'
     - regex: 'E1003'
       model: 'X'
+
+# [Thangnt 2016-11-29]
+
+# Devices with undectable brand, but detectable model
+Unknown:
+  regex: 'WebTV/(\d+\.\d+)|^Lavf|stagefright|ExoPlayer|TalkTV|Mobile Safari|vnTalk'
+  device: 'smartphone'
+  models:
+    - regex: 'WebTV/(\d+\.\d+)'
+      device: 'tv'
+      model: 'Web TV'
+      
+#    - regex: '^Lavf'
+#      device: 'smartphone'
+#    - regex: 'stagefright|ExoPlayer|TalkTV|Mobile Safari|vnTalk'
+#      device: 'smartphone'
