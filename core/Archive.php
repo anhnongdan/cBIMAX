@@ -214,8 +214,10 @@ class Archive
             $timezone = Site::getTimezoneFor($websiteIds[0]);
         }
 
+        // [Thangnt 2017-02-28] Debug for incorrect archiving result
+        
         $logger = StaticContainer::get('Psr\Log\LoggerInterface');
-        $logger->debug("From build() of Archive: the date takes in: %s, period: %s, timezone: %", $strDate, $period, $timezone);
+        $logger->debug("From build() of Archive: the date takes in: %s, period: %s, timezone: %s", $strDate, $period, $timezone);
         
         if (Period::isMultiplePeriod($strDate, $period)) {
             $logger->debug("From build() of Archive: $strDate is Multiple Period");
@@ -227,6 +229,7 @@ class Archive
             $allPeriods = array($oPeriod);
         }
 
+        $logger->debug("From build() of Archive: parsed Period is: %s", $oPeriod->getLabel());
         $segment        = new Segment($segment, $websiteIds);
         $idSiteIsAll    = $idSites == self::REQUEST_ALL_WEBSITES_FLAG;
         $isMultipleDate = Period::isMultiplePeriod($strDate, $period);

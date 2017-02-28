@@ -44,7 +44,7 @@ class Loader
     public function __construct(Parameters $params)
     {
 	$period = $params->getPeriod();
-	Log::Debug("ArchiveProcessor/Loader:construct period:%s start:%s", $period->getLabel(), $period->getDateStart()->getDatetime());
+	Log::Debug("ArchiveProcessor/Loader:construct period:%s start:%s end:%s", $period->getLabel(), $period->getDateStart()->getDatetime(), $period->getDateEnd()->getDatetime());
         $this->params = $params;
     }
 
