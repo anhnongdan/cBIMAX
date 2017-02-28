@@ -215,12 +215,14 @@ class Archive
         }
 
         $logger = StaticContainer::get('Psr\Log\LoggerInterface');
-        $logger->debug("From build() of Archive: the date takes in: $strDate");
+        $logger->debug("From build() of Archive: the date takes in: %s, period: %s, timezone: %", $strDate, $period, $timezone);
         
         if (Period::isMultiplePeriod($strDate, $period)) {
+            $logger->debug("From build() of Archive: $strDate is Multiple Period");
             $oPeriod    = PeriodFactory::build($period, $strDate, $timezone);
             $allPeriods = $oPeriod->getSubperiods();
         } else {
+            $logger->debug("From build() of Archive: $strDate is NOT Multiple Period");
             $oPeriod    = PeriodFactory::makePeriodFromQueryParams($timezone, $period, $strDate);
             $allPeriods = array($oPeriod);
         }

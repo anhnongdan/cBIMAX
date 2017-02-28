@@ -41,6 +41,7 @@ class Factory
         if (is_string($date)) {
             if (Period::isMultiplePeriod($date, $period)
                 || $period == 'range') {
+                Log::debug("From build() of PeriodFactory: this will return range if Period is multiple period (might be last1)");
                 return new Range($period, $date, $timezone);
             }
             $date = Date::factory($date);
