@@ -845,6 +845,7 @@ class CronArchive
         $this->requests++;
         $this->processed++;
 
+        $shouldArchiveWithoutVisits = PluginsArchiver::doesAnyPluginArchiveWithoutVisits();
         // If there is no visit today and we don't need to process this website, we can skip remaining archives
         if (
             0 == $visitsToday && !$shouldArchiveWithoutVisits
