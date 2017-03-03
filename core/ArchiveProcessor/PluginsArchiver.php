@@ -139,7 +139,10 @@ class PluginsArchiver
                      */
                     if ($this->isSingleSiteDayArchive) {
                         
-                        if ($pluginName === 'VisitTime') {
+			//[Thangnt 2017-01-20]
+			//Even hourly data can be calculated from my_Period.
+                        //if ($pluginName === 'VisitTime' || $pluginName === 'MediaAnalytics') {
+			if ($pluginName === 'MediaAnalytics') {
                             Log::debug("PluginsArchiver::%s: Archiving hourly data is skipped for plugin '%s'.", __FUNCTION__, $pluginName);
                         } else {
                             Log::debug("PluginsArchiver::%s: Archiving day (actually hour) reports for plugin '%s'.", __FUNCTION__, $pluginName);
@@ -152,7 +155,8 @@ class PluginsArchiver
                     } else {
                         Log::debug("PluginsArchiver::%s: Archiving period reports for plugin '%s'.", __FUNCTION__, $pluginName);
 
-                        if ($pluginName === 'VisitTime') {
+                        //if ($pluginName === 'VisitTime' || $pluginName === 'MediaAnalytics') {
+			if ($pluginName === 'MediaAnalytics') {
                             Log::debug("PluginsArchiver::%s: Archiving day reports for plugin '%s' before aggregate Multiple Reports.", __FUNCTION__, $pluginName);
                             $archiver->aggregateDayReport();
                         }
