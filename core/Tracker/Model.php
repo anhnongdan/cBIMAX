@@ -12,6 +12,11 @@ use Exception;
 use Piwik\Common;
 use Piwik\Tracker;
 
+/**
+ * [Thangnt 2017-03-05] Route imported log in to log_link_visit_action_tracker.
+ * See Common::prefixTable below
+ */
+
 class Model
 {
 
@@ -19,7 +24,7 @@ class Model
     {
         $fields = implode(", ", array_keys($visitAction));
         $values = Common::getSqlStringFieldsArray($visitAction);
-        $table  = Common::prefixTable('log_link_visit_action');
+        $table  = Common::prefixTable('log_link_visit_action', $isTracker=1);
 
         $sql  = "INSERT INTO $table ($fields) VALUES ($values)";
         $bind = array_values($visitAction);
@@ -321,7 +326,7 @@ class Model
         list($updateParts, $sqlBind) = $this->fieldsToQuery($valuesToUpdate);
 
         $parts = implode($updateParts, ', ');
-        $table = Common::prefixTable('log_link_visit_action');
+        $table = Common::prefixTable('log_link_visit_action', $isTracker=1);
 
         $sqlQuery = "UPDATE $table SET $parts WHERE idlink_va = ?";
 

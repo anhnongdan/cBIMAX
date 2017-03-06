@@ -50,6 +50,8 @@ class Common
     }
 
     /**
+     * [Thangnt 2017-03-05] Route imported logs into log_link_visit_action_tracker
+     * 
      * Returns a prefixed table name.
      *
      * The table prefix is determined by the `[database] tables_prefix` INI config
@@ -59,12 +61,21 @@ class Common
      * @return string  The prefixed name, ie "piwik-production_log_visit".
      * @api
      */
-    public static function prefixTable($table)
+//    public static function prefixTable($table)
+//    {
+//        $prefix = Config::getInstance()->database['tables_prefix'];
+//        return $prefix . $table;
+//    }
+    public static function prefixTable($table, $isTracker=0)
     {
         $prefix = Config::getInstance()->database['tables_prefix'];
+        if($isTracker == 1) {
+                $table = $table . "_tracker";
+        }
         return $prefix . $table;
     }
 
+    
     /**
      * Returns an array containing the prefixed table names of every passed argument.
      *

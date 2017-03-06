@@ -220,7 +220,7 @@ class ArchiveProcessor
             $latestUsedTableId = Manager::getInstance()->getMostRecentTableId();
 
             //[Thangnt 2016-11-07] Debug the strtotime exception of VisitTime
-            Log::debug("[Thangnt 1107] Ar.Proc::aggregateDataTableRecords recordName: $recordName");
+            Log::debug("[Thangnt 1107] Ar.Proc::aggregateDataTableRecords recordName: %s, aggre. operation: %s", $recordName, $columnsAggregationOperation);
             
             $table = $this->aggregateDataTableRecord($recordName, $columnsAggregationOperation, $columnsToRenameAfterAggregation);
 
@@ -232,7 +232,11 @@ class ArchiveProcessor
             $blob = $table->getSerialized($maximumRowsInDataTableLevelZero, $maximumRowsInSubDataTable, $columnToSortByBeforeTruncation);
             Common::destroy($table);
             $this->insertBlobRecord($recordName, $blob);
-
+            
+//            if (strpos($recordName, "ction") == false) { 
+//                Log::debug("[Thangnt 0306] Ar.Proc::aggrDTRec: blob: %s", implode(", ", $blob));
+//            }
+            
             unset($blob);
             DataTable\Manager::getInstance()->deleteAll($latestUsedTableId);
         }
