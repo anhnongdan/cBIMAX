@@ -14,6 +14,7 @@ use Piwik\Intl\Data\Provider\LanguageDataProvider;
 use Piwik\Intl\Data\Provider\RegionDataProvider;
 use Piwik\Plugins\UserCountry\LocationProvider\DefaultProvider;
 use Piwik\Tracker\Cache as TrackerCache;
+use Piwik\Log;
 
 /**
  * Contains helper methods used by both Piwik Core and the Piwik Tracking engine.
@@ -69,8 +70,10 @@ class Common
     public static function prefixTable($table, $isTracker=0)
     {
         $prefix = Config::getInstance()->database['tables_prefix'];
-        if($isTracker == 1) {
+        if($isTracker == 1 && $table == "log_link_visit_action") {
                 $table = $table . "_tracker";
+        } elseif ($isTracker == 1) {
+            Log::debug("Common::%s Unexpected table name request, no tracker table for: %s", __FUNCTION__, $table);
         }
         return $prefix . $table;
     }
