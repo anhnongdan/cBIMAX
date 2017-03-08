@@ -2,6 +2,10 @@
     path = tests/travis
     url = https://github.com/piwik/travis-scripts.git
     branch = master
+[submodule "vendor/facebook/xhprof"]
+        path = vendor/facebook/xhprof
+        url = https://github.com/phacility/xhprof.git
+    branch = master
 
 # Add new Plugin submodule above this line ^^
 # 
