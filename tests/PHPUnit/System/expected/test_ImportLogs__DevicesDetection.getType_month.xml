@@ -7,11 +7,19 @@
 		<max_actions>3</max_actions>
 		<sum_visit_length>549</sum_visit_length>
 		<bounce_count>27</bounce_count>
-		<nb_visits_converted>30</nb_visits_converted>
+		<goals>
+			<row idgoal='1'>
+				<nb_conversions>30</nb_conversions>
+				<nb_visits_converted>30</nb_visits_converted>
+				<revenue>150</revenue>
+			</row>
+		</goals>
+		<nb_conversions>30</nb_conversions>
+		<revenue>150</revenue>
 		<sum_daily_nb_uniq_visitors>29</sum_daily_nb_uniq_visitors>
 		<sum_daily_nb_users>2</sum_daily_nb_users>
 		<segment>deviceType==desktop</segment>
-		<logo>plugins/DevicesDetection/images/screens/normal.gif</logo>
+		<logo>plugins/DevicesDetection/images/screens/normal.png</logo>
 	</row>
 	<row>
 		<label>Smartphone</label>
@@ -20,7 +28,15 @@
 		<max_actions>3</max_actions>
 		<sum_visit_length>2</sum_visit_length>
 		<bounce_count>3</bounce_count>
-		<nb_visits_converted>4</nb_visits_converted>
+		<goals>
+			<row idgoal='1'>
+				<nb_conversions>4</nb_conversions>
+				<nb_visits_converted>4</nb_visits_converted>
+				<revenue>20</revenue>
+			</row>
+		</goals>
+		<nb_conversions>4</nb_conversions>
+		<revenue>20</revenue>
 		<sum_daily_nb_uniq_visitors>4</sum_daily_nb_uniq_visitors>
 		<sum_daily_nb_users>1</sum_daily_nb_users>
 		<segment>deviceType==smartphone</segment>
@@ -33,10 +49,19 @@
 		<max_actions>1</max_actions>
 		<sum_visit_length>0</sum_visit_length>
 		<bounce_count>4</bounce_count>
-		<nb_visits_converted>1</nb_visits_converted>
+		<goals>
+			<row idgoal='1'>
+				<nb_conversions>1</nb_conversions>
+				<nb_visits_converted>1</nb_visits_converted>
+				<revenue>5</revenue>
+			</row>
+		</goals>
+		<nb_conversions>1</nb_conversions>
+		<revenue>5</revenue>
 		<sum_daily_nb_uniq_visitors>4</sum_daily_nb_uniq_visitors>
 		<sum_daily_nb_users>0</sum_daily_nb_users>
-		<logo>plugins/DevicesDetection/images/screens/unknown.gif</logo>
+		<nb_visits_converted>0</nb_visits_converted>
+		<logo>plugins/DevicesDetection/images/screens/unknown.png</logo>
 	</row>
 	<row>
 		<label>Camera</label>
@@ -54,31 +79,31 @@
 		<label>Console</label>
 		<nb_visits>0</nb_visits>
 		<segment>deviceType==console</segment>
-		<logo>plugins/DevicesDetection/images/screens/console.gif</logo>
+		<logo>plugins/DevicesDetection/images/screens/console.png</logo>
 	</row>
 	<row>
 		<label>Feature phone</label>
 		<nb_visits>0</nb_visits>
 		<segment>deviceType==feature+phone</segment>
-		<logo>plugins/DevicesDetection/images/screens/mobile.gif</logo>
+		<logo>plugins/DevicesDetection/images/screens/mobile.png</logo>
 	</row>
 	<row>
 		<label>Phablet</label>
 		<nb_visits>0</nb_visits>
 		<segment>deviceType==phablet</segment>
-		<logo>plugins/DevicesDetection/images/screens/unknown.gif</logo>
+		<logo>plugins/DevicesDetection/images/screens/unknown.png</logo>
 	</row>
 	<row>
 		<label>Portable media player</label>
 		<nb_visits>0</nb_visits>
 		<segment>deviceType==portable+media+player</segment>
-		<logo>plugins/DevicesDetection/images/screens/unknown.gif</logo>
+		<logo>plugins/DevicesDetection/images/screens/unknown.png</logo>
 	</row>
 	<row>
 		<label>Smart display</label>
 		<nb_visits>0</nb_visits>
 		<segment>deviceType==smart+display</segment>
-		<logo>plugins/DevicesDetection/images/screens/unknown.gif</logo>
+		<logo>plugins/DevicesDetection/images/screens/unknown.png</logo>
 	</row>
 	<row>
 		<label>Tablet</label>

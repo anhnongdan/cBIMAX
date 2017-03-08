@@ -8,6 +8,7 @@
 namespace Piwik\Tests\Fixtures;
 
 use Exception;
+use Piwik\API\Request;
 use Piwik\AssetManager;
 use Piwik\Access;
 use Piwik\Common;
@@ -16,15 +17,13 @@ use Piwik\Db;
 use Piwik\DbHelper;
 use Piwik\FrontController;
 use Piwik\Option;
+use Piwik\Piwik;
 use Piwik\Plugins\PrivacyManager\IPAnonymizer;
 use Piwik\Plugins\SegmentEditor\API as APISegmentEditor;
 use Piwik\Plugins\UserCountry\LocationProvider;
 use Piwik\Plugins\UsersManager\API as UsersManagerAPI;
 use Piwik\Plugins\SitesManager\API as SitesManagerAPI;
 use Piwik\Tests\Framework\Fixture;
-use Piwik\WidgetsList;
-use Piwik\Tests\Framework\OverrideLogin;
-use Piwik\Tests\Framework\TestCase\SystemTestCase;
 use Piwik\Plugins\VisitsSummary\API as VisitsSummaryAPI;
 use Piwik\Config as PiwikConfig;
 
@@ -233,13 +232,13 @@ class UITestFixture extends SqlDump
 
         $oldGet = $_GET;
         $_GET['idSite'] = 1;
-        $_GET['token_auth'] = Fixture::getTokenAuth();
+        $_GET['token_auth'] = Piwik::getCurrentUserTokenAuth();
 
         // collect widgets & sort them so widget order is not important
-        $allWidgets = array();
-        foreach (WidgetsList::get() as $category => $widgets) {
-            $allWidgets = array_merge($allWidgets, $widgets);
-        }
+        $allWidgets = Request::processRequest('API.getWidgetMetadata', array(
+            'idSite' => 1
+        ));
+
         usort($allWidgets, function ($lhs, $rhs) {
             return strcmp($lhs['uniqueId'], $rhs['uniqueId']);
         });
@@ -304,11 +303,12 @@ class UITestFixture extends SqlDump
         $dashboard = array(
             array(
                 array(
-                    'uniqueId' => "widgetVisitsSummarygetEvolutionGraphcolumnsArray",
+                    'uniqueId' => "widgetVisitsSummarygetEvolutionGraphforceView1viewDataTablegraphEvolution",
                     'parameters' => array(
                         'module' => 'VisitsSummary',
                         'action' => 'getEvolutionGraph',
-                        'columns' => 'nb_visits'
+                        'forceView' => '1',
+                        'viewDataTable' => 'graphEvolution'
                     )
                 )
             ),

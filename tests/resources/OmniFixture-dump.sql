@@ -179,6 +179,7 @@ CREATE TABLE `goal` (
   `idsite` int(11) NOT NULL,
   `idgoal` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
+  `description` VARCHAR(255) NOT NULL DEFAULT '',
   `match_attribute` varchar(20) NOT NULL,
   `pattern` varchar(255) NOT NULL,
   `pattern_type` varchar(10) NOT NULL,
@@ -196,7 +197,7 @@ CREATE TABLE `goal` (
 
 LOCK TABLES `goal` WRITE;
 /*!40000 ALTER TABLE `goal` DISABLE KEYS */;
-INSERT INTO `goal` VALUES (1,1,'<script>$(\'body\').html(\'goal name XSS!\');</script>','url','http','contains',0,1,5,0),(1,2,'two','url','xxxxxxxxxxxxx','contains',0,0,5,0),(1,3,'click event','event_action','click','contains',0,0,0,0),(1,4,'category event','event_category','The_Category','exact',1,0,0,0),(1,5,'name event','event_name','<the_\'\"name>','exact',0,0,0,0);
+INSERT INTO `goal` VALUES (1,1,'<script>$(\'body\').html(\'goal name XSS!\');</script>','<script>$(\'body\').html(\'goal description XSS!\');</script>','url','http','contains',0,1,5,0),(1,2,'two','twodesc','url','xxxxxxxxxxxxx','contains',0,0,5,0),(1,3,'click event','','event_action','click','contains',0,0,0,0),(1,4,'category event','categorydesc','event_category','The_Category','exact',1,0,0,0),(1,5,'name event','eventdesc','event_name','<the_\'\"name>','exact',0,0,0,0);
 /*!40000 ALTER TABLE `goal` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -739,6 +740,21 @@ LOCK TABLES `site_setting` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `plugin_setting`
+--
+
+DROP TABLE IF EXISTS `plugin_setting`;
+CREATE TABLE `plugin_setting` (
+  `plugin_name` varchar(60) NOT NULL,
+  `setting_name` varchar(255) NOT NULL,
+  `setting_value` longtext NOT NULL,
+  `user_login` varchar(100) NOT NULL DEFAULT '',
+  PRIMARY KEY (`plugin_name`,`setting_name`,`user_login`),
+  INDEX(plugin_name, user_login)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+--
 -- Table structure for table `site_url`
 --
 
@@ -798,10 +814,10 @@ DROP TABLE IF EXISTS `user`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `user` (
   `login` varchar(100) NOT NULL,
-  `password` char(32) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `alias` varchar(45) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `token_auth` char(32) NOT NULL,
+  `token_auth` char(64) NOT NULL,
   `superuser_access` tinyint(2) unsigned NOT NULL DEFAULT '0',
   `date_registered` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`login`),
@@ -815,7 +831,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES ('superUserLogin','1e56c228742c0189d261500852e27a02','superUserLogin','hello@example.org','9ad1de7f8b329ab919d854c556f860c1',1,'2016-03-09 09:10:19');
+INSERT INTO `user` VALUES ('superUserLogin','$2y$10$vh5d/W6S9M7u.1G2gc1TOeetRi.6HN6OG1jq47j5JhixtqTxkdGVi','superUserLogin','hello@example.org','9ad1de7f8b329ab919d854c556f860c1',1,'2016-03-09 09:10:19');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 

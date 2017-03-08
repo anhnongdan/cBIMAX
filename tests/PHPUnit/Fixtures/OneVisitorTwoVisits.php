@@ -7,10 +7,13 @@
  */
 namespace Piwik\Tests\Fixtures;
 
+use Piwik\Common;
 use Piwik\Date;
+use Piwik\Db;
 use Piwik\Plugins\Goals\API as APIGoals;
 use Piwik\Plugins\SitesManager\API as APISitesManager;
 use Piwik\Tests\Framework\Fixture;
+use Piwik\Tracker\Cache;
 
 /**
  * This fixture adds one website and tracks two visits by one visitor.
@@ -25,16 +28,37 @@ class OneVisitorTwoVisits extends Fixture
     public $useThirdPartyCookies = false;
     public $useSiteSearch = false;
     public $excludeMozilla = false;
+    public $simulateIntegerOverflow = false;
+    public $maxUnsignedIntegerValue = '4294967295';
 
     public function setUp()
     {
         $this->setUpWebsitesAndGoals();
+        $this->simulateIntegerOverflow();
         $this->trackVisits();
     }
 
     public function tearDown()
     {
         // empty
+    }
+
+    private function simulateIntegerOverflow()
+    {
+        if(!$this->simulateIntegerOverflow) {
+            return;
+        }
+
+        $overflow = $this->maxUnsignedIntegerValue;
+
+        // overflow in log_visit
+        $table = Common::prefixTable('log_visit');
+        Db::query("INSERT INTO $table (idvisit) VALUES ($overflow)");
+
+        // overflow in log_link_visit_action
+        $table = Common::prefixTable('log_link_visit_action');
+        Db::query("INSERT INTO $table (idlink_va) VALUES ($overflow)");
+
     }
 
     private function setUpWebsitesAndGoals()
@@ -61,7 +85,11 @@ class OneVisitorTwoVisits extends Fixture
             APISitesManager::getInstance()->setSiteSpecificUserAgentExcludeEnabled(false);
         }
 
+        self::createSuperUser();
         $t = self::getTracker($idSite, $dateTime, $defaultInit = true);
+
+        Cache::clearCacheGeneral();
+        Cache::regenerateCacheWebsiteAttributes(array($idSite));
 
         if ($this->useThirdPartyCookies) {
             $t->DEBUG_APPEND_URL = '&forceUseThirdPartyCookie=1';

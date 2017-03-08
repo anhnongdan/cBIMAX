@@ -19,7 +19,9 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<generationTimeMilliseconds>292</generationTimeMilliseconds>
 				<generationTime>0.29s</generationTime>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				
 			</row>
@@ -33,7 +35,7 @@
 		
 		<userId />
 		<visitorType>returning</visitorType>
-		<visitorTypeIcon>plugins/Live/images/returningVisitor.gif</visitorTypeIcon>
+		<visitorTypeIcon>plugins/Live/images/returningVisitor.png</visitorTypeIcon>
 		<visitConverted>0</visitConverted>
 		<visitConvertedIcon />
 		<visitCount>77</visitCount>
@@ -46,6 +48,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>website</referrerType>
 		<referrerTypeName>Websites</referrerTypeName>
 		<referrerName>blog.comperiosearch.com</referrerName>
@@ -57,19 +60,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows 8.1</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>8.1</operatingSystemVersion>
 		<browserFamily>Blink</browserFamily>
 		<browserFamilyDescription>Blink (Chrome, Opera)</browserFamilyDescription>
 		<browser>Chrome 33.0</browser>
 		<browserName>Chrome</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/CH.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/CH.png</browserIcon>
 		<browserCode>CH</browserCode>
 		<browserVersion>33.0</browserVersion>
 		<events>0</events>
@@ -82,7 +85,7 @@
 		<regionCode>NC</regionCode>
 		<city>Raleigh</city>
 		<location>Raleigh, North Carolina, United States</location>
-		<latitude>35.771999</latitude>
+		<latitude>35.772000</latitude>
 		<longitude>-78.639000</longitude>
 		<visitLocalTime>20:34:49</visitLocalTime>
 		<visitLocalHour>20</visitLocalHour>
@@ -97,15 +100,15 @@
 		<plugins>pdf, flash, java</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.png</pluginIcon>
 				<pluginName>pdf</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 		</pluginsIcons>
@@ -114,6 +117,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>3</idSite>
@@ -134,6 +143,7 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition>1</interactionPosition>
 				<timeSpent>79</timeSpent>
 				<timeSpentPretty>1 min 19s</timeSpentPretty>
 				<icon />
@@ -152,6 +162,7 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition>2</interactionPosition>
 				<icon />
 				
 			</row>
@@ -165,7 +176,7 @@
 		
 		<userId />
 		<visitorType>returning</visitorType>
-		<visitorTypeIcon>plugins/Live/images/returningVisitor.gif</visitorTypeIcon>
+		<visitorTypeIcon>plugins/Live/images/returningVisitor.png</visitorTypeIcon>
 		<visitConverted>0</visitConverted>
 		<visitConvertedIcon />
 		<visitCount>2</visitCount>
@@ -178,6 +189,7 @@
 		<visitDurationPretty>1 min 20s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>2</actions>
+		<interactions>2</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -189,19 +201,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows 7</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>7</operatingSystemVersion>
 		<browserFamily>Trident</browserFamily>
 		<browserFamilyDescription>Trident (IE)</browserFamilyDescription>
 		<browser>Internet Explorer 8.0</browser>
 		<browserName>Internet Explorer</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/IE.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/IE.png</browserIcon>
 		<browserCode>IE</browserCode>
 		<browserVersion>8.0</browserVersion>
 		<events>0</events>
@@ -215,7 +227,7 @@
 		<city>Lake Forest</city>
 		<location>Lake Forest, California, United States</location>
 		<latitude>33.645000</latitude>
-		<longitude>-117.679001</longitude>
+		<longitude>-117.679000</longitude>
 		<visitLocalTime>17:33:27</visitLocalTime>
 		<visitLocalHour>17</visitLocalHour>
 		<daysSinceLastVisit>181</daysSinceLastVisit>
@@ -233,6 +245,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>3</idSite>
@@ -253,7 +271,9 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<generationTimeMilliseconds>413</generationTimeMilliseconds>
 				<generationTime>0.41s</generationTime>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				
 			</row>
@@ -267,7 +287,7 @@
 		
 		<userId />
 		<visitorType>returning</visitorType>
-		<visitorTypeIcon>plugins/Live/images/returningVisitor.gif</visitorTypeIcon>
+		<visitorTypeIcon>plugins/Live/images/returningVisitor.png</visitorTypeIcon>
 		<visitConverted>0</visitConverted>
 		<visitConvertedIcon />
 		<visitCount>1</visitCount>
@@ -280,6 +300,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -291,19 +312,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows 7</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>7</operatingSystemVersion>
 		<browserFamily>Blink</browserFamily>
 		<browserFamilyDescription>Blink (Chrome, Opera)</browserFamilyDescription>
 		<browser>Chrome 34.0</browser>
 		<browserName>Chrome</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/CH.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/CH.png</browserIcon>
 		<browserCode>CH</browserCode>
 		<browserVersion>34.0</browserVersion>
 		<events>0</events>
@@ -335,23 +356,23 @@
 		<plugins>pdf, flash, java, quicktime, silverlight</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.png</pluginIcon>
 				<pluginName>pdf</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/quicktime.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/quicktime.png</pluginIcon>
 				<pluginName>quicktime</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/silverlight.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/silverlight.png</pluginIcon>
 				<pluginName>silverlight</pluginName>
 			</row>
 		</pluginsIcons>
@@ -360,6 +381,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>3</idSite>
@@ -380,6 +407,7 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition>1</interactionPosition>
 				<timeSpent>32</timeSpent>
 				<timeSpentPretty>32s</timeSpentPretty>
 				<icon />
@@ -398,6 +426,7 @@
 						<customVariablePageValue1>501</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition>2</interactionPosition>
 				<icon />
 				
 			</row>
@@ -411,7 +440,7 @@
 		
 		<userId />
 		<visitorType>returning</visitorType>
-		<visitorTypeIcon>plugins/Live/images/returningVisitor.gif</visitorTypeIcon>
+		<visitorTypeIcon>plugins/Live/images/returningVisitor.png</visitorTypeIcon>
 		<visitConverted>0</visitConverted>
 		<visitConvertedIcon />
 		<visitCount>7</visitCount>
@@ -424,6 +453,7 @@
 		<visitDurationPretty>33s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>2</actions>
+		<interactions>2</interactions>
 		<referrerType>search</referrerType>
 		<referrerTypeName>Search Engines</referrerTypeName>
 		<referrerName>Google</referrerName>
@@ -435,19 +465,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Mac 10.9</operatingSystem>
 		<operatingSystemName>Mac</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/MAC.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/MAC.png</operatingSystemIcon>
 		<operatingSystemCode>MAC</operatingSystemCode>
 		<operatingSystemVersion>10.9</operatingSystemVersion>
 		<browserFamily>WebKit</browserFamily>
 		<browserFamilyDescription>WebKit (Safari, Chrome)</browserFamilyDescription>
 		<browser>Safari 7.0</browser>
 		<browserName>Safari</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/SF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/SF.png</browserIcon>
 		<browserCode>SF</browserCode>
 		<browserVersion>7.0</browserVersion>
 		<events>0</events>
@@ -475,19 +505,19 @@
 		<plugins>pdf, flash, java, quicktime</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.png</pluginIcon>
 				<pluginName>pdf</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/quicktime.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/quicktime.png</pluginIcon>
 				<pluginName>quicktime</pluginName>
 			</row>
 		</pluginsIcons>
@@ -496,6 +526,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>3</idSite>
@@ -516,7 +552,8 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
-				<icon>plugins/Morpheus/images/link.gif</icon>
+				<interactionPosition />
+				<icon>plugins/Morpheus/images/link.png</icon>
 				
 			</row>
 		</actionDetails>
@@ -529,7 +566,7 @@
 		
 		<userId />
 		<visitorType>returning</visitorType>
-		<visitorTypeIcon>plugins/Live/images/returningVisitor.gif</visitorTypeIcon>
+		<visitorTypeIcon>plugins/Live/images/returningVisitor.png</visitorTypeIcon>
 		<visitConverted>0</visitConverted>
 		<visitConvertedIcon />
 		<visitCount>1</visitCount>
@@ -542,6 +579,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>0</interactions>
 		<referrerType>website</referrerType>
 		<referrerTypeName>Websites</referrerTypeName>
 		<referrerName>musicforeveryoneradio.be</referrerName>
@@ -553,19 +591,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows 7</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>7</operatingSystemVersion>
 		<browserFamily>Blink</browserFamily>
 		<browserFamilyDescription>Blink (Chrome, Opera)</browserFamilyDescription>
 		<browser>Chrome 33.0</browser>
 		<browserName>Chrome</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/CH.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/CH.png</browserIcon>
 		<browserCode>CH</browserCode>
 		<browserVersion>33.0</browserVersion>
 		<events>0</events>
@@ -578,7 +616,7 @@
 		<regionCode>05</regionCode>
 		<city>Maaseik</city>
 		<location>Maaseik, Limburg, Belgium</location>
-		<latitude>51.099998</latitude>
+		<latitude>51.100000</latitude>
 		<longitude>5.800000</longitude>
 		<visitLocalTime>01:34:24</visitLocalTime>
 		<visitLocalHour>1</visitLocalHour>
@@ -593,19 +631,19 @@
 		<plugins>pdf, flash, java, silverlight</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.png</pluginIcon>
 				<pluginName>pdf</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/silverlight.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/silverlight.png</pluginIcon>
 				<pluginName>silverlight</pluginName>
 			</row>
 		</pluginsIcons>
@@ -614,6 +652,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>3</idSite>
@@ -634,7 +678,9 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<generationTimeMilliseconds>391</generationTimeMilliseconds>
 				<generationTime>0.39s</generationTime>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				
 			</row>
@@ -661,6 +707,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>search</referrerType>
 		<referrerTypeName>Search Engines</referrerTypeName>
 		<referrerName>Google</referrerName>
@@ -672,19 +719,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Mac 10.9</operatingSystem>
 		<operatingSystemName>Mac</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/MAC.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/MAC.png</operatingSystemIcon>
 		<operatingSystemCode>MAC</operatingSystemCode>
 		<operatingSystemVersion>10.9</operatingSystemVersion>
 		<browserFamily>Blink</browserFamily>
 		<browserFamilyDescription>Blink (Chrome, Opera)</browserFamilyDescription>
 		<browser>Chrome 33.0</browser>
 		<browserName>Chrome</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/CH.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/CH.png</browserIcon>
 		<browserCode>CH</browserCode>
 		<browserVersion>33.0</browserVersion>
 		<events>0</events>
@@ -698,7 +745,7 @@
 		<city>San Francisco</city>
 		<location>San Francisco, California, United States</location>
 		<latitude>37.792000</latitude>
-		<longitude>-122.408997</longitude>
+		<longitude>-122.409000</longitude>
 		<visitLocalTime>17:33:58</visitLocalTime>
 		<visitLocalHour>17</visitLocalHour>
 		<daysSinceLastVisit>0</daysSinceLastVisit>
@@ -712,27 +759,27 @@
 		<plugins>pdf, flash, java, quicktime, windowsmedia, silverlight</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.png</pluginIcon>
 				<pluginName>pdf</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/quicktime.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/quicktime.png</pluginIcon>
 				<pluginName>quicktime</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/windowsmedia.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/windowsmedia.png</pluginIcon>
 				<pluginName>windowsmedia</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/silverlight.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/silverlight.png</pluginIcon>
 				<pluginName>silverlight</pluginName>
 			</row>
 		</pluginsIcons>
@@ -741,6 +788,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>3</idSite>
@@ -761,6 +814,7 @@
 						<customVariablePageValue1>404</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				
 			</row>
@@ -774,7 +828,7 @@
 		
 		<userId />
 		<visitorType>returning</visitorType>
-		<visitorTypeIcon>plugins/Live/images/returningVisitor.gif</visitorTypeIcon>
+		<visitorTypeIcon>plugins/Live/images/returningVisitor.png</visitorTypeIcon>
 		<visitConverted>0</visitConverted>
 		<visitConvertedIcon />
 		<visitCount>4</visitCount>
@@ -787,6 +841,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>search</referrerType>
 		<referrerTypeName>Search Engines</referrerTypeName>
 		<referrerName>Google</referrerName>
@@ -798,19 +853,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Mac 10.9</operatingSystem>
 		<operatingSystemName>Mac</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/MAC.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/MAC.png</operatingSystemIcon>
 		<operatingSystemCode>MAC</operatingSystemCode>
 		<operatingSystemVersion>10.9</operatingSystemVersion>
 		<browserFamily>WebKit</browserFamily>
 		<browserFamilyDescription>WebKit (Safari, Chrome)</browserFamilyDescription>
 		<browser>Safari 7.0</browser>
 		<browserName>Safari</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/SF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/SF.png</browserIcon>
 		<browserCode>SF</browserCode>
 		<browserVersion>7.0</browserVersion>
 		<events>0</events>
@@ -823,8 +878,8 @@
 		<regionCode>19</regionCode>
 		<city>Nihon'odori</city>
 		<location>Nihon'odori, Kanagawa, Japan</location>
-		<latitude>35.450001</latitude>
-		<longitude>139.649994</longitude>
+		<latitude>35.450000</latitude>
+		<longitude>139.650000</longitude>
 		<visitLocalTime>09:33:50</visitLocalTime>
 		<visitLocalHour>9</visitLocalHour>
 		<daysSinceLastVisit>1</daysSinceLastVisit>
@@ -838,15 +893,15 @@
 		<plugins>pdf, java, quicktime</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.png</pluginIcon>
 				<pluginName>pdf</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/quicktime.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/quicktime.png</pluginIcon>
 				<pluginName>quicktime</pluginName>
 			</row>
 		</pluginsIcons>
@@ -855,6 +910,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>3</idSite>
@@ -875,7 +936,9 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<generationTimeMilliseconds>119</generationTimeMilliseconds>
 				<generationTime>0.12s</generationTime>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				
 			</row>
@@ -889,7 +952,7 @@
 		
 		<userId />
 		<visitorType>returning</visitorType>
-		<visitorTypeIcon>plugins/Live/images/returningVisitor.gif</visitorTypeIcon>
+		<visitorTypeIcon>plugins/Live/images/returningVisitor.png</visitorTypeIcon>
 		<visitConverted>0</visitConverted>
 		<visitConvertedIcon />
 		<visitCount>2</visitCount>
@@ -902,6 +965,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>website</referrerType>
 		<referrerTypeName>Websites</referrerTypeName>
 		<referrerName>berndjung.com</referrerName>
@@ -918,14 +982,14 @@
 		<deviceModel />
 		<operatingSystem>Android</operatingSystem>
 		<operatingSystemName>Android</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/AND.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/AND.png</operatingSystemIcon>
 		<operatingSystemCode>AND</operatingSystemCode>
 		<operatingSystemVersion />
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 27.0</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>27.0</browserVersion>
 		<events>0</events>
@@ -938,7 +1002,7 @@
 		<regionCode>07</regionCode>
 		<city>Weilerswist</city>
 		<location>Weilerswist, Nordrhein-Westfalen, Germany</location>
-		<latitude>50.766998</latitude>
+		<latitude>50.767000</latitude>
 		<longitude>6.833000</longitude>
 		<visitLocalTime>01:33:31</visitLocalTime>
 		<visitLocalHour>1</visitLocalHour>
@@ -953,7 +1017,7 @@
 		<plugins>flash</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 		</pluginsIcons>
@@ -962,6 +1026,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>3</idSite>
@@ -982,7 +1052,9 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<generationTimeMilliseconds>145</generationTimeMilliseconds>
 				<generationTime>0.15s</generationTime>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				
 			</row>
@@ -996,7 +1068,7 @@
 		
 		<userId />
 		<visitorType>returning</visitorType>
-		<visitorTypeIcon>plugins/Live/images/returningVisitor.gif</visitorTypeIcon>
+		<visitorTypeIcon>plugins/Live/images/returningVisitor.png</visitorTypeIcon>
 		<visitConverted>0</visitConverted>
 		<visitConvertedIcon />
 		<visitCount>5</visitCount>
@@ -1009,6 +1081,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>website</referrerType>
 		<referrerTypeName>Websites</referrerTypeName>
 		<referrerName>forum.golem.de</referrerName>
@@ -1020,19 +1093,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows 7</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>7</operatingSystemVersion>
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 27.0</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>27.0</browserVersion>
 		<events>0</events>
@@ -1060,27 +1133,27 @@
 		<plugins>pdf, flash, java, quicktime, windowsmedia, silverlight</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.png</pluginIcon>
 				<pluginName>pdf</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/quicktime.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/quicktime.png</pluginIcon>
 				<pluginName>quicktime</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/windowsmedia.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/windowsmedia.png</pluginIcon>
 				<pluginName>windowsmedia</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/silverlight.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/silverlight.png</pluginIcon>
 				<pluginName>silverlight</pluginName>
 			</row>
 		</pluginsIcons>
@@ -1089,6 +1162,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>3</idSite>
@@ -1109,7 +1188,9 @@
 						<customVariablePageValue1>403</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<generationTimeMilliseconds>182</generationTimeMilliseconds>
 				<generationTime>0.18s</generationTime>
+				<interactionPosition>1</interactionPosition>
 				<timeSpent>2</timeSpent>
 				<timeSpentPretty>2s</timeSpentPretty>
 				<icon />
@@ -1128,7 +1209,9 @@
 						<customVariablePageValue1>500</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<generationTimeMilliseconds>113</generationTimeMilliseconds>
 				<generationTime>0.11s</generationTime>
+				<interactionPosition>2</interactionPosition>
 				<timeSpent>7</timeSpent>
 				<timeSpentPretty>7s</timeSpentPretty>
 				<icon />
@@ -1147,6 +1230,7 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition />
 				<icon>plugins/Morpheus/images/download.png</icon>
 				
 			</row>
@@ -1173,6 +1257,7 @@
 		<visitDurationPretty>10s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>3</actions>
+		<interactions>2</interactions>
 		<referrerType>search</referrerType>
 		<referrerTypeName>Search Engines</referrerTypeName>
 		<referrerName>Google</referrerName>
@@ -1184,19 +1269,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows 8</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>8</operatingSystemVersion>
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 27.0</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>27.0</browserVersion>
 		<events>0</events>
@@ -1209,8 +1294,8 @@
 		<regionCode>48</regionCode>
 		<city>Moscow</city>
 		<location>Moscow, Moscow City, Russia</location>
-		<latitude>55.751999</latitude>
-		<longitude>37.616001</longitude>
+		<latitude>55.752000</latitude>
+		<longitude>37.616000</longitude>
 		<visitLocalTime>04:28:18</visitLocalTime>
 		<visitLocalHour>4</visitLocalHour>
 		<daysSinceLastVisit>0</daysSinceLastVisit>
@@ -1224,11 +1309,11 @@
 		<plugins>flash, java</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 		</pluginsIcons>
@@ -1237,6 +1322,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>3</idSite>
@@ -1257,7 +1348,9 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<generationTimeMilliseconds>134</generationTimeMilliseconds>
 				<generationTime>0.13s</generationTime>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				
 			</row>
@@ -1271,7 +1364,7 @@
 		
 		<userId />
 		<visitorType>returning</visitorType>
-		<visitorTypeIcon>plugins/Live/images/returningVisitor.gif</visitorTypeIcon>
+		<visitorTypeIcon>plugins/Live/images/returningVisitor.png</visitorTypeIcon>
 		<visitConverted>0</visitConverted>
 		<visitConvertedIcon />
 		<visitCount>5</visitCount>
@@ -1284,6 +1377,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -1295,19 +1389,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows 7</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>7</operatingSystemVersion>
 		<browserFamily>Blink</browserFamily>
 		<browserFamilyDescription>Blink (Chrome, Opera)</browserFamilyDescription>
 		<browser>Chrome 33.0</browser>
 		<browserName>Chrome</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/CH.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/CH.png</browserIcon>
 		<browserCode>CH</browserCode>
 		<browserVersion>33.0</browserVersion>
 		<events>0</events>
@@ -1321,7 +1415,7 @@
 		<city>Esentepe</city>
 		<location>Esentepe, Rize, Turkey</location>
 		<latitude>40.979000</latitude>
-		<longitude>40.415001</longitude>
+		<longitude>40.415000</longitude>
 		<visitLocalTime>02:32:21</visitLocalTime>
 		<visitLocalHour>2</visitLocalHour>
 		<daysSinceLastVisit>8</daysSinceLastVisit>
@@ -1335,19 +1429,19 @@
 		<plugins>pdf, flash, java, silverlight</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.png</pluginIcon>
 				<pluginName>pdf</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/silverlight.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/silverlight.png</pluginIcon>
 				<pluginName>silverlight</pluginName>
 			</row>
 		</pluginsIcons>
@@ -1356,6 +1450,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>3</idSite>
@@ -1376,7 +1476,9 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<generationTimeMilliseconds>58</generationTimeMilliseconds>
 				<generationTime>0.06s</generationTime>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				
 			</row>
@@ -1403,6 +1505,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>website</referrerType>
 		<referrerTypeName>Websites</referrerTypeName>
 		<referrerName>musicforeveryoneradio.be</referrerName>
@@ -1414,19 +1517,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows 7</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>7</operatingSystemVersion>
 		<browserFamily>Blink</browserFamily>
 		<browserFamilyDescription>Blink (Chrome, Opera)</browserFamilyDescription>
 		<browser>Chrome 33.0</browser>
 		<browserName>Chrome</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/CH.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/CH.png</browserIcon>
 		<browserCode>CH</browserCode>
 		<browserVersion>33.0</browserVersion>
 		<events>0</events>
@@ -1439,7 +1542,7 @@
 		<regionCode>05</regionCode>
 		<city>Maaseik</city>
 		<location>Maaseik, Limburg, Belgium</location>
-		<latitude>51.099998</latitude>
+		<latitude>51.100000</latitude>
 		<longitude>5.800000</longitude>
 		<visitLocalTime>01:34:18</visitLocalTime>
 		<visitLocalHour>1</visitLocalHour>
@@ -1454,19 +1557,19 @@
 		<plugins>pdf, flash, java, silverlight</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.png</pluginIcon>
 				<pluginName>pdf</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/silverlight.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/silverlight.png</pluginIcon>
 				<pluginName>silverlight</pluginName>
 			</row>
 		</pluginsIcons>
@@ -1475,6 +1578,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>3</idSite>
@@ -1503,6 +1612,7 @@
 						<customVariablePageValue5>Electronics &amp; Cameras</customVariablePageValue5>
 					</row>
 				</customVariables>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				
 			</row>
@@ -1529,6 +1639,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>website</referrerType>
 		<referrerTypeName>Websites</referrerTypeName>
 		<referrerName>piwik.org</referrerName>
@@ -1540,19 +1651,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>Trident</browserFamily>
 		<browserFamilyDescription>Trident (IE)</browserFamilyDescription>
 		<browser>Internet Explorer 6.0</browser>
 		<browserName>Internet Explorer</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/IE.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/IE.png</browserIcon>
 		<browserCode>IE</browserCode>
 		<browserVersion>6.0</browserVersion>
 		<events>0</events>
@@ -1580,11 +1691,11 @@
 		<plugins>flash, java</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 		</pluginsIcons>
@@ -1593,6 +1704,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>3</idSite>
@@ -1613,6 +1730,7 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				
 			</row>
@@ -1626,7 +1744,7 @@
 		
 		<userId />
 		<visitorType>returning</visitorType>
-		<visitorTypeIcon>plugins/Live/images/returningVisitor.gif</visitorTypeIcon>
+		<visitorTypeIcon>plugins/Live/images/returningVisitor.png</visitorTypeIcon>
 		<visitConverted>0</visitConverted>
 		<visitConvertedIcon />
 		<visitCount>1</visitCount>
@@ -1639,6 +1757,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>website</referrerType>
 		<referrerTypeName>Websites</referrerTypeName>
 		<referrerName>sn110w.snt110.mail.live.com</referrerName>
@@ -1650,19 +1769,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>WebKit</browserFamily>
 		<browserFamilyDescription>WebKit (Safari, Chrome)</browserFamilyDescription>
 		<browser>Chrome 11.0</browser>
 		<browserName>Chrome</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/CH.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/CH.png</browserIcon>
 		<browserCode>CH</browserCode>
 		<browserVersion>11.0</browserVersion>
 		<events>0</events>
@@ -1690,27 +1809,27 @@
 		<plugins>pdf, flash, java, director, windowsmedia, gears</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/pdf.png</pluginIcon>
 				<pluginName>pdf</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/director.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/director.png</pluginIcon>
 				<pluginName>director</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/windowsmedia.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/windowsmedia.png</pluginIcon>
 				<pluginName>windowsmedia</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/gears.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/gears.png</pluginIcon>
 				<pluginName>gears</pluginName>
 			</row>
 		</pluginsIcons>
@@ -1719,6 +1838,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>3</idSite>
@@ -1739,6 +1864,7 @@
 						<customVariablePageValue5>Electronics &amp; Cameras</customVariablePageValue5>
 					</row>
 				</customVariables>
+				<interactionPosition>1</interactionPosition>
 				<timeSpent>0</timeSpent>
 				<timeSpentPretty>0s</timeSpentPretty>
 				<icon />
@@ -1761,6 +1887,7 @@
 						<customVariablePageValue4>PRODUCT name</customVariablePageValue4>
 					</row>
 				</customVariables>
+				<interactionPosition>2</interactionPosition>
 				<timeSpent>0</timeSpent>
 				<timeSpentPretty>0s</timeSpentPretty>
 				<icon />
@@ -1779,6 +1906,7 @@
 						<customVariablePageValue5>Electronics &amp; Cameras</customVariablePageValue5>
 					</row>
 				</customVariables>
+				<interactionPosition>3</interactionPosition>
 				<icon />
 				
 			</row>
@@ -1805,6 +1933,7 @@
 		<visitDurationPretty>1s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>3</actions>
+		<interactions>3</interactions>
 		<referrerType>website</referrerType>
 		<referrerTypeName>Websites</referrerTypeName>
 		<referrerName>piwik.org</referrerName>
@@ -1816,19 +1945,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Mac 10.6</operatingSystem>
 		<operatingSystemName>Mac</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/MAC.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/MAC.png</operatingSystemIcon>
 		<operatingSystemCode>MAC</operatingSystemCode>
 		<operatingSystemVersion>10.6</operatingSystemVersion>
 		<browserFamily>WebKit</browserFamily>
 		<browserFamilyDescription>WebKit (Safari, Chrome)</browserFamilyDescription>
 		<browser>Safari 5.0</browser>
 		<browserName>Safari</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/SF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/SF.png</browserIcon>
 		<browserCode>SF</browserCode>
 		<browserVersion>5.0</browserVersion>
 		<events>0</events>
@@ -1856,11 +1985,11 @@
 		<plugins>flash, java</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 		</pluginsIcons>
@@ -1869,5 +1998,11 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 </result>

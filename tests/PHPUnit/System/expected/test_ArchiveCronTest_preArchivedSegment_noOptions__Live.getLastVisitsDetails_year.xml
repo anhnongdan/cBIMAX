@@ -19,7 +19,9 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<generationTimeMilliseconds>123</generationTimeMilliseconds>
 				<generationTime>0.12s</generationTime>
+				<interactionPosition>1</interactionPosition>
 				<timeSpent>0</timeSpent>
 				<timeSpentPretty>0s</timeSpentPretty>
 				<icon />
@@ -49,7 +51,9 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<generationTimeMilliseconds>120</generationTimeMilliseconds>
 				<generationTime>0.12s</generationTime>
+				<interactionPosition>5</interactionPosition>
 				<timeSpent>0</timeSpent>
 				<timeSpentPretty>0s</timeSpentPretty>
 				<icon />
@@ -68,7 +72,9 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<generationTimeMilliseconds>23</generationTimeMilliseconds>
 				<generationTime>0.02s</generationTime>
+				<interactionPosition>9</interactionPosition>
 				<timeSpent>52</timeSpent>
 				<timeSpentPretty>52s</timeSpentPretty>
 				<icon />
@@ -87,7 +93,9 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<generationTimeMilliseconds>234</generationTimeMilliseconds>
 				<generationTime>0.23s</generationTime>
+				<interactionPosition>2</interactionPosition>
 				<timeSpent>50</timeSpent>
 				<timeSpentPretty>50s</timeSpentPretty>
 				<icon />
@@ -106,7 +114,9 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<generationTimeMilliseconds>294</generationTimeMilliseconds>
 				<generationTime>0.29s</generationTime>
+				<interactionPosition>6</interactionPosition>
 				<timeSpent>49</timeSpent>
 				<timeSpentPretty>49s</timeSpentPretty>
 				<icon />
@@ -125,7 +135,9 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<generationTimeMilliseconds>237</generationTimeMilliseconds>
 				<generationTime>0.24s</generationTime>
+				<interactionPosition>10</interactionPosition>
 				<timeSpent>26</timeSpent>
 				<timeSpentPretty>26s</timeSpentPretty>
 				<icon />
@@ -144,7 +156,9 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<generationTimeMilliseconds>1324</generationTimeMilliseconds>
 				<generationTime>1.32s</generationTime>
+				<interactionPosition>3</interactionPosition>
 				<timeSpent>26</timeSpent>
 				<timeSpentPretty>26s</timeSpentPretty>
 				<icon />
@@ -163,7 +177,9 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<generationTimeMilliseconds>624</generationTimeMilliseconds>
 				<generationTime>0.62s</generationTime>
+				<interactionPosition>7</interactionPosition>
 				<timeSpent>7</timeSpent>
 				<timeSpentPretty>7s</timeSpentPretty>
 				<icon />
@@ -182,7 +198,9 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<generationTimeMilliseconds>543</generationTimeMilliseconds>
 				<generationTime>0.54s</generationTime>
+				<interactionPosition>4</interactionPosition>
 				<timeSpent>8</timeSpent>
 				<timeSpentPretty>8s</timeSpentPretty>
 				<icon />
@@ -201,7 +219,9 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<generationTimeMilliseconds>343</generationTimeMilliseconds>
 				<generationTime>0.34s</generationTime>
+				<interactionPosition>8</interactionPosition>
 				<icon />
 				
 			</row>
@@ -228,6 +248,7 @@
 		<visitDurationPretty>54s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>10</actions>
+		<interactions>10</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -239,19 +260,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Unknown</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/unknown.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/unknown.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Unknown</operatingSystem>
 		<operatingSystemName>Unknown</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/UNK.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/UNK.png</operatingSystemIcon>
 		<operatingSystemCode>UNK</operatingSystemCode>
 		<operatingSystemVersion>UNK</operatingSystemVersion>
 		<browserFamily />
 		<browserFamilyDescription>Unknown</browserFamilyDescription>
 		<browser>Unknown</browser>
 		<browserName>Unknown</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/UNK.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/UNK.png</browserIcon>
 		<browserCode>UNK</browserCode>
 		<browserVersion />
 		<events>0</events>
@@ -277,6 +298,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -316,6 +343,7 @@
 						<customVariablePageValue5>Electronics &amp; Cameras</customVariablePageValue5>
 					</row>
 				</customVariables>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				
 			</row>
@@ -342,6 +370,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>website</referrerType>
 		<referrerTypeName>Websites</referrerTypeName>
 		<referrerName>piwik.org</referrerName>
@@ -353,19 +382,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>Trident</browserFamily>
 		<browserFamilyDescription>Trident (IE)</browserFamilyDescription>
 		<browser>Internet Explorer 6.0</browser>
 		<browserName>Internet Explorer</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/IE.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/IE.png</browserIcon>
 		<browserCode>IE</browserCode>
 		<browserVersion>6.0</browserVersion>
 		<events>0</events>
@@ -391,11 +420,11 @@
 		<plugins>flash, java</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 		</pluginsIcons>
@@ -404,6 +433,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -435,6 +470,7 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				
 			</row>
@@ -461,6 +497,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -472,19 +509,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Mac 10.6</operatingSystem>
 		<operatingSystemName>Mac</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/MAC.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/MAC.png</operatingSystemIcon>
 		<operatingSystemCode>MAC</operatingSystemCode>
 		<operatingSystemVersion>10.6</operatingSystemVersion>
 		<browserFamily>WebKit</browserFamily>
 		<browserFamilyDescription>WebKit (Safari, Chrome)</browserFamilyDescription>
 		<browser>RockMelt 0.9</browser>
 		<browserName>RockMelt</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/CH.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/RM.png</browserIcon>
 		<browserCode>RM</browserCode>
 		<browserVersion>0.9</browserVersion>
 		<events>0</events>
@@ -514,6 +551,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -545,6 +588,7 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				
 			</row>
@@ -571,6 +615,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -582,19 +627,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Mac 10.6</operatingSystem>
 		<operatingSystemName>Mac</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/MAC.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/MAC.png</operatingSystemIcon>
 		<operatingSystemCode>MAC</operatingSystemCode>
 		<operatingSystemVersion>10.6</operatingSystemVersion>
 		<browserFamily>WebKit</browserFamily>
 		<browserFamilyDescription>WebKit (Safari, Chrome)</browserFamilyDescription>
 		<browser>RockMelt 0.9</browser>
 		<browserName>RockMelt</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/CH.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/RM.png</browserIcon>
 		<browserCode>RM</browserCode>
 		<browserVersion>0.9</browserVersion>
 		<events>0</events>
@@ -624,6 +669,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -644,6 +695,7 @@
 						<customVariablePageValue1>301</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition>1</interactionPosition>
 				<timeSpent>180</timeSpent>
 				<timeSpentPretty>3 min 0s</timeSpentPretty>
 				<icon />
@@ -673,6 +725,7 @@
 						<customVariablePageValue1>307</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition>2</interactionPosition>
 				<icon />
 				
 			</row>
@@ -699,6 +752,7 @@
 		<visitDurationPretty>3 min 2s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>2</actions>
+		<interactions>2</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -710,19 +764,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Mac 10.6</operatingSystem>
 		<operatingSystemName>Mac</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/MAC.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/MAC.png</operatingSystemIcon>
 		<operatingSystemCode>MAC</operatingSystemCode>
 		<operatingSystemVersion>10.6</operatingSystemVersion>
 		<browserFamily>WebKit</browserFamily>
 		<browserFamilyDescription>WebKit (Safari, Chrome)</browserFamilyDescription>
 		<browser>RockMelt 0.9</browser>
 		<browserName>RockMelt</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/CH.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/RM.png</browserIcon>
 		<browserCode>RM</browserCode>
 		<browserVersion>0.9</browserVersion>
 		<events>0</events>
@@ -752,6 +806,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -772,6 +832,7 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition />
 				<timeSpent>61</timeSpent>
 				<timeSpentPretty>1 min 1s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/download.png</icon>
@@ -790,6 +851,7 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition />
 				<timeSpent>61</timeSpent>
 				<timeSpentPretty>1 min 1s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/download.png</icon>
@@ -808,6 +870,7 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition />
 				<icon>plugins/Morpheus/images/download.png</icon>
 				
 			</row>
@@ -834,6 +897,7 @@
 		<visitDurationPretty>2 min 3s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>3</actions>
+		<interactions>0</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -845,19 +909,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Mac 10.6</operatingSystem>
 		<operatingSystemName>Mac</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/MAC.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/MAC.png</operatingSystemIcon>
 		<operatingSystemCode>MAC</operatingSystemCode>
 		<operatingSystemVersion>10.6</operatingSystemVersion>
 		<browserFamily>WebKit</browserFamily>
 		<browserFamilyDescription>WebKit (Safari, Chrome)</browserFamilyDescription>
 		<browser>RockMelt 0.9</browser>
 		<browserName>RockMelt</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/CH.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/RM.png</browserIcon>
 		<browserCode>RM</browserCode>
 		<browserVersion>0.9</browserVersion>
 		<events>0</events>
@@ -887,6 +951,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -918,6 +988,7 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				
 			</row>
@@ -944,6 +1015,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -955,19 +1027,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Unknown</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/unknown.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/unknown.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Bot</operatingSystem>
 		<operatingSystemName>Bot</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/UNK.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/UNK.png</operatingSystemIcon>
 		<operatingSystemCode>BOT</operatingSystemCode>
 		<operatingSystemVersion>UNK</operatingSystemVersion>
 		<browserFamily />
 		<browserFamilyDescription>Unknown</browserFamilyDescription>
 		<browser>Unknown</browser>
 		<browserName>Unknown</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/UNK.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/UNK.png</browserIcon>
 		<browserCode>UNK</browserCode>
 		<browserVersion />
 		<events>0</events>
@@ -997,6 +1069,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -1028,6 +1106,7 @@
 						<customVariablePageValue1>500</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				
 			</row>
@@ -1054,6 +1133,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -1065,19 +1145,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows 7</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>7</operatingSystemVersion>
 		<browserFamily>Trident</browserFamily>
 		<browserFamilyDescription>Trident (IE)</browserFamilyDescription>
 		<browser>Internet Explorer 9.0</browser>
 		<browserName>Internet Explorer</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/IE.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/IE.png</browserIcon>
 		<browserCode>IE</browserCode>
 		<browserVersion>9.0</browserVersion>
 		<events>0</events>
@@ -1107,6 +1187,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -1127,6 +1213,7 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition />
 				<icon>plugins/Morpheus/images/download.png</icon>
 				
 			</row>
@@ -1153,6 +1240,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>0</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -1164,19 +1252,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Unknown</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/unknown.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/unknown.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Unknown</operatingSystem>
 		<operatingSystemName>Unknown</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/UNK.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/UNK.png</operatingSystemIcon>
 		<operatingSystemCode>UNK</operatingSystemCode>
 		<operatingSystemVersion>UNK</operatingSystemVersion>
 		<browserFamily />
 		<browserFamilyDescription>Unknown</browserFamilyDescription>
 		<browser>Unknown</browser>
 		<browserName>Unknown</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/UNK.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/UNK.png</browserIcon>
 		<browserCode>UNK</browserCode>
 		<browserVersion />
 		<events>0</events>
@@ -1206,6 +1294,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -1237,6 +1331,7 @@
 						<customVariablePageValue1>404</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				
 			</row>
@@ -1263,6 +1358,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -1279,14 +1375,14 @@
 		<deviceModel>Vision</deviceModel>
 		<operatingSystem>Android 2.3</operatingSystem>
 		<operatingSystemName>Android</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/AND.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/AND.png</operatingSystemIcon>
 		<operatingSystemCode>AND</operatingSystemCode>
 		<operatingSystemVersion>2.3</operatingSystemVersion>
 		<browserFamily>WebKit</browserFamily>
 		<browserFamilyDescription>WebKit (Safari, Chrome)</browserFamilyDescription>
 		<browser>Android Browser</browser>
 		<browserName>Android Browser</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/AN.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/AN.png</browserIcon>
 		<browserCode>AN</browserCode>
 		<browserVersion />
 		<events>0</events>
@@ -1316,5 +1412,11 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 </result>

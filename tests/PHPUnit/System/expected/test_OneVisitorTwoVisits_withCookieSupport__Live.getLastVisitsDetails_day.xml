@@ -24,7 +24,9 @@
 				<pageIdAction>13</pageIdAction>
 				
 				<pageId>9</pageId>
+				<generationTimeMilliseconds>134</generationTimeMilliseconds>
 				<generationTime>0.13s</generationTime>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				
 			</row>
@@ -38,7 +40,7 @@
 		
 		<userId />
 		<visitorType>returning</visitorType>
-		<visitorTypeIcon>plugins/Live/images/returningVisitor.gif</visitorTypeIcon>
+		<visitorTypeIcon>plugins/Live/images/returningVisitor.png</visitorTypeIcon>
 		<visitConverted>1</visitConverted>
 		<visitConvertedIcon>plugins/Morpheus/images/goal.png</visitConvertedIcon>
 		<visitCount>2</visitCount>
@@ -51,6 +53,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>search</referrerType>
 		<referrerTypeName>Search Engines</referrerTypeName>
 		<referrerName>Yahoo!</referrerName>
@@ -62,19 +65,19 @@
 		<languageCode>fr</languageCode>
 		<language>French</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 3.6</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>3.6</browserVersion>
 		<events>0</events>
@@ -98,11 +101,11 @@
 		<plugins>flash, java</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 		</pluginsIcons>
@@ -111,6 +114,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -125,7 +134,9 @@
 				<pageIdAction>2</pageIdAction>
 				
 				<pageId>1</pageId>
+				<generationTimeMilliseconds>234</generationTimeMilliseconds>
 				<generationTime>0.23s</generationTime>
+				<interactionPosition>1</interactionPosition>
 				<timeSpent>180</timeSpent>
 				<timeSpentPretty>3 min 0s</timeSpentPretty>
 				<icon />
@@ -138,7 +149,9 @@
 				<pageIdAction>4</pageIdAction>
 				
 				<pageId>2</pageId>
+				<generationTimeMilliseconds>224</generationTimeMilliseconds>
 				<generationTime>0.22s</generationTime>
+				<interactionPosition>2</interactionPosition>
 				<timeSpent>180</timeSpent>
 				<timeSpentPretty>3 min 0s</timeSpentPretty>
 				<icon />
@@ -151,9 +164,10 @@
 				<pageIdAction>5</pageIdAction>
 				
 				<pageId>3</pageId>
+				<interactionPosition />
 				<timeSpent>360</timeSpent>
 				<timeSpentPretty>6 min 0s</timeSpentPretty>
-				<icon>plugins/Morpheus/images/link.gif</icon>
+				<icon>plugins/Morpheus/images/link.png</icon>
 				
 			</row>
 			<row>
@@ -163,6 +177,7 @@
 				<pageIdAction>6</pageIdAction>
 				
 				<pageId>4</pageId>
+				<interactionPosition />
 				<timeSpent>72</timeSpent>
 				<timeSpentPretty>1 min 12s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/download.png</icon>
@@ -175,9 +190,10 @@
 				<pageIdAction>7</pageIdAction>
 				
 				<pageId>5</pageId>
+				<interactionPosition />
 				<timeSpent>108</timeSpent>
 				<timeSpentPretty>1 min 48s</timeSpentPretty>
-				<icon>plugins/Morpheus/images/link.gif</icon>
+				<icon>plugins/Morpheus/images/link.png</icon>
 				
 			</row>
 			<row>
@@ -187,9 +203,10 @@
 				<pageIdAction>8</pageIdAction>
 				
 				<pageId>6</pageId>
+				<interactionPosition />
 				<timeSpent>72</timeSpent>
 				<timeSpentPretty>1 min 12s</timeSpentPretty>
-				<icon>plugins/Morpheus/images/link.gif</icon>
+				<icon>plugins/Morpheus/images/link.png</icon>
 				
 			</row>
 			<row>
@@ -210,7 +227,9 @@
 				
 				<pageId>7</pageId>
 				<siteSearchKeyword>Banks Own The World</siteSearchKeyword>
+				<generationTimeMilliseconds>812</generationTimeMilliseconds>
 				<generationTime>0.81s</generationTime>
+				<interactionPosition>3</interactionPosition>
 				<timeSpent>108</timeSpent>
 				<timeSpentPretty>1 min 48s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/search_ico.png</icon>
@@ -223,7 +242,9 @@
 				<pageIdAction>11</pageIdAction>
 				
 				<pageId>8</pageId>
+				<generationTimeMilliseconds>24</generationTimeMilliseconds>
 				<generationTime>0.02s</generationTime>
+				<interactionPosition>4</interactionPosition>
 				<icon />
 				
 			</row>
@@ -250,6 +271,7 @@
 		<visitDurationPretty>27 min 1s</visitDurationPretty>
 		<searches>1</searches>
 		<actions>8</actions>
+		<interactions>4</interactions>
 		<referrerType>website</referrerType>
 		<referrerTypeName>Websites</referrerTypeName>
 		<referrerName>referrer.com</referrerName>
@@ -261,19 +283,19 @@
 		<languageCode>fr</languageCode>
 		<language>French</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 3.6</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>3.6</browserVersion>
 		<events>0</events>
@@ -297,11 +319,11 @@
 		<plugins>flash, java</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 		</pluginsIcons>
@@ -310,5 +332,11 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 </result>

@@ -20,7 +20,7 @@
 			<row>
 				<type>action</type>
 				<url>http://piwik.net/grue/lair</url>
-				<pageTitle>It&amp;#039;s &lt;script&gt; pitch black...</pageTitle>
+				<pageTitle>It's &lt;script&gt; pitch black...</pageTitle>
 				<pageIdAction>2</pageIdAction>
 				
 				<pageId>40</pageId>
@@ -34,6 +34,7 @@
 						<customVariablePageValue5>Cvar5 PAGE value is 7</customVariablePageValue5>
 					</row>
 				</customVariables>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				
 			</row>
@@ -47,7 +48,7 @@
 		
 		<userId />
 		<visitorType>returningCustomer</visitorType>
-		<visitorTypeIcon>plugins/Live/images/returningVisitor.gif</visitorTypeIcon>
+		<visitorTypeIcon>plugins/Live/images/returningVisitor.png</visitorTypeIcon>
 		<visitConverted>1</visitConverted>
 		<visitConvertedIcon>plugins/Morpheus/images/goal.png</visitConvertedIcon>
 		<visitCount>5</visitCount>
@@ -60,6 +61,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -71,19 +73,19 @@
 		<languageCode>fr</languageCode>
 		<language>French</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 3.6</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>3.6</browserVersion>
 		<events>0</events>
@@ -115,11 +117,11 @@
 		<plugins>flash, java</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 		</pluginsIcons>
@@ -128,6 +130,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -142,6 +150,7 @@
 				<pageIdAction>4</pageIdAction>
 				
 				<pageId>35</pageId>
+				<interactionPosition>1</interactionPosition>
 				<timeSpent>360</timeSpent>
 				<timeSpentPretty>6 min 0s</timeSpentPretty>
 				<icon />
@@ -171,6 +180,7 @@
 					</row>
 				</customVariables>
 				<siteSearchKeyword>Bring on the party</siteSearchKeyword>
+				<interactionPosition>2</interactionPosition>
 				<timeSpent>180</timeSpent>
 				<timeSpentPretty>3 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/search_ico.png</icon>
@@ -194,6 +204,7 @@
 				<pageIdAction>37</pageIdAction>
 				
 				<pageId>37</pageId>
+				<interactionPosition />
 				<timeSpent>180</timeSpent>
 				<timeSpentPretty>3 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/download.png</icon>
@@ -206,9 +217,10 @@
 				<pageIdAction>38</pageIdAction>
 				
 				<pageId>38</pageId>
+				<interactionPosition />
 				<timeSpent>180</timeSpent>
 				<timeSpentPretty>3 min 0s</timeSpentPretty>
-				<icon>plugins/Morpheus/images/link.gif</icon>
+				<icon>plugins/Morpheus/images/link.png</icon>
 				
 			</row>
 			<row>
@@ -221,6 +233,7 @@
 				<eventAction>Action6</eventAction>
 				<eventName>Name6</eventName>
 				<eventValue>351.678</eventValue>
+				<interactionPosition />
 				<icon>plugins/Morpheus/images/event.png</icon>
 				
 			</row>
@@ -234,7 +247,7 @@
 		
 		<userId />
 		<visitorType>returningCustomer</visitorType>
-		<visitorTypeIcon>plugins/Live/images/returningVisitor.gif</visitorTypeIcon>
+		<visitorTypeIcon>plugins/Live/images/returningVisitor.png</visitorTypeIcon>
 		<visitConverted>1</visitConverted>
 		<visitConvertedIcon>plugins/Morpheus/images/goal.png</visitConvertedIcon>
 		<visitCount>5</visitCount>
@@ -247,6 +260,7 @@
 		<visitDurationPretty>27 min 1s</visitDurationPretty>
 		<searches>1</searches>
 		<actions>5</actions>
+		<interactions>2</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -258,19 +272,19 @@
 		<languageCode>fr</languageCode>
 		<language>French</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 3.6</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>3.6</browserVersion>
 		<events>1</events>
@@ -302,11 +316,11 @@
 		<plugins>flash, java</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 		</pluginsIcons>
@@ -315,6 +329,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -336,7 +356,7 @@
 			<row>
 				<type>action</type>
 				<url>http://piwik.net/grue/lair</url>
-				<pageTitle>It&amp;#039;s &lt;script&gt; pitch black...</pageTitle>
+				<pageTitle>It's &lt;script&gt; pitch black...</pageTitle>
 				<pageIdAction>2</pageIdAction>
 				
 				<pageId>34</pageId>
@@ -350,6 +370,7 @@
 						<customVariablePageValue5>Cvar5 PAGE value is 6</customVariablePageValue5>
 					</row>
 				</customVariables>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				
 			</row>
@@ -363,7 +384,7 @@
 		
 		<userId />
 		<visitorType>returningCustomer</visitorType>
-		<visitorTypeIcon>plugins/Live/images/returningVisitor.gif</visitorTypeIcon>
+		<visitorTypeIcon>plugins/Live/images/returningVisitor.png</visitorTypeIcon>
 		<visitConverted>1</visitConverted>
 		<visitConvertedIcon>plugins/Morpheus/images/goal.png</visitConvertedIcon>
 		<visitCount>5</visitCount>
@@ -376,6 +397,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -387,19 +409,19 @@
 		<languageCode>fr</languageCode>
 		<language>French</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 3.6</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>3.6</browserVersion>
 		<events>0</events>
@@ -431,11 +453,11 @@
 		<plugins>flash, java</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 		</pluginsIcons>
@@ -444,5 +466,11 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 </result>

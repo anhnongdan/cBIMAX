@@ -18,6 +18,7 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				<timestamp>1365328800</timestamp>
 			</row>
@@ -44,6 +45,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -55,19 +57,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows Vista</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>Vista</operatingSystemVersion>
 		<browserFamily>Trident</browserFamily>
 		<browserFamilyDescription>Trident (IE)</browserFamilyDescription>
 		<browser>Internet Explorer 7.0</browser>
 		<browserName>Internet Explorer</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/IE.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/IE.png</browserIcon>
 		<browserCode>IE</browserCode>
 		<browserVersion>7.0</browserVersion>
 		<events>0</events>
@@ -95,6 +97,12 @@
 		<serverDatePretty>Sunday, April 7, 2013</serverDatePretty>
 		<serverDatePrettyFirstAction>Sunday, April 7, 2013</serverDatePrettyFirstAction>
 		<serverTimePrettyFirstAction>10:00:00</serverTimePrettyFirstAction>
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -114,6 +122,7 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				<timestamp>1365246000</timestamp>
 			</row>
@@ -140,6 +149,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -151,19 +161,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows Vista</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>Vista</operatingSystemVersion>
 		<browserFamily>Trident</browserFamily>
 		<browserFamilyDescription>Trident (IE)</browserFamilyDescription>
 		<browser>Internet Explorer 7.0</browser>
 		<browserName>Internet Explorer</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/IE.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/IE.png</browserIcon>
 		<browserCode>IE</browserCode>
 		<browserVersion>7.0</browserVersion>
 		<events>0</events>
@@ -191,6 +201,12 @@
 		<serverDatePretty>Saturday, April 6, 2013</serverDatePretty>
 		<serverDatePrettyFirstAction>Saturday, April 6, 2013</serverDatePrettyFirstAction>
 		<serverTimePrettyFirstAction>11:00:00</serverTimePrettyFirstAction>
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -210,6 +226,7 @@
 						<customVariablePageValue1>200</customVariablePageValue1>
 					</row>
 				</customVariables>
+				<interactionPosition>1</interactionPosition>
 				<icon />
 				<timestamp>1365163200</timestamp>
 			</row>
@@ -236,6 +253,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>1</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -247,19 +265,19 @@
 		<languageCode />
 		<language>Unknown</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows Vista</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>Vista</operatingSystemVersion>
 		<browserFamily>Trident</browserFamily>
 		<browserFamilyDescription>Trident (IE)</browserFamilyDescription>
 		<browser>Internet Explorer 7.0</browser>
 		<browserName>Internet Explorer</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/IE.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/IE.png</browserIcon>
 		<browserCode>IE</browserCode>
 		<browserVersion>7.0</browserVersion>
 		<events>0</events>
@@ -287,5 +305,11 @@
 		<serverDatePretty>Friday, April 5, 2013</serverDatePretty>
 		<serverDatePrettyFirstAction>Friday, April 5, 2013</serverDatePrettyFirstAction>
 		<serverTimePrettyFirstAction>12:00:00</serverTimePrettyFirstAction>
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 </result>

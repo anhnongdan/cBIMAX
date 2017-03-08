@@ -14,6 +14,7 @@
 				<pageId>22</pageId>
 				<eventCategory>Movie</eventCategory>
 				<eventAction>Purchase</eventAction>
+				<interactionPosition />
 				<icon>plugins/Morpheus/images/event.png</icon>
 				
 			</row>
@@ -40,6 +41,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>0</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -51,19 +53,19 @@
 		<languageCode>fr</languageCode>
 		<language>French</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 3.6</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>3.6</browserVersion>
 		<events>1</events>
@@ -91,11 +93,11 @@
 		<plugins>flash, java</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 		</pluginsIcons>
@@ -104,6 +106,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -119,6 +127,7 @@
 				<pageId>21</pageId>
 				<eventCategory>Movie</eventCategory>
 				<eventAction>Search</eventAction>
+				<interactionPosition />
 				<icon>plugins/Morpheus/images/event.png</icon>
 				
 			</row>
@@ -145,6 +154,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>0</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -156,19 +166,19 @@
 		<languageCode>fr</languageCode>
 		<language>French</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 3.6</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>3.6</browserVersion>
 		<events>1</events>
@@ -196,11 +206,11 @@
 		<plugins>flash, java</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 		</pluginsIcons>
@@ -209,6 +219,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -225,6 +241,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>play50%</eventAction>
 				<eventName>Spirited Away (千と千尋の神隠し)</eventName>
+				<interactionPosition />
 				<timeSpent>1320</timeSpent>
 				<timeSpentPretty>22 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -239,6 +256,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>play75%</eventAction>
 				<eventName>Spirited Away (千と千尋の神隠し)</eventName>
+				<interactionPosition />
 				<timeSpent>420</timeSpent>
 				<timeSpentPretty>7 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -253,6 +271,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>Search</eventAction>
 				<eventName>Search query here</eventName>
+				<interactionPosition />
 				<timeSpent>900</timeSpent>
 				<timeSpentPretty>15 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -267,6 +286,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>playEnd</eventAction>
 				<eventName>Spirited Away (千と千尋の神隠し)</eventName>
+				<interactionPosition />
 				<timeSpent>120</timeSpent>
 				<timeSpentPretty>2 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -282,6 +302,7 @@
 				<eventAction>rating</eventAction>
 				<eventName>Spirited Away (千と千尋の神隠し)</eventName>
 				<eventValue>9.66</eventValue>
+				<interactionPosition />
 				<timeSpent>720</timeSpent>
 				<timeSpentPretty>12 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -297,6 +318,7 @@
 				<eventAction>event action Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long ---&gt; SHOULD APPEAR IN TEST OUTPUT NOT TRUNCATED &lt;---</eventAction>
 				<eventName>event name Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long ---&gt; SHOULD APPEAR IN TEST OUTPUT NOT TRUNCATED &lt;---</eventName>
 				<eventValue>9.66</eventValue>
+				<interactionPosition />
 				<icon>plugins/Morpheus/images/event.png</icon>
 				
 			</row>
@@ -323,6 +345,7 @@
 		<visitDurationPretty>58 min 1s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>6</actions>
+		<interactions>0</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -334,19 +357,19 @@
 		<languageCode>fr</languageCode>
 		<language>French</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 3.6</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>3.6</browserVersion>
 		<events>6</events>
@@ -374,11 +397,11 @@
 		<plugins>flash, java</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 		</pluginsIcons>
@@ -387,6 +410,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -402,6 +431,7 @@
 				<pageId>19</pageId>
 				<eventCategory>Movie</eventCategory>
 				<eventAction>Search</eventAction>
+				<interactionPosition />
 				<icon>plugins/Morpheus/images/event.png</icon>
 				
 			</row>
@@ -428,6 +458,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>0</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -439,19 +470,19 @@
 		<languageCode>fr</languageCode>
 		<language>French</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 3.6</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>3.6</browserVersion>
 		<events>1</events>
@@ -479,11 +510,11 @@
 		<plugins>flash, java</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 		</pluginsIcons>
@@ -492,6 +523,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -517,7 +554,9 @@
 				<pageIdAction>2</pageIdAction>
 				
 				<pageId>1</pageId>
+				<generationTimeMilliseconds>333</generationTimeMilliseconds>
 				<generationTime>0.33s</generationTime>
+				<interactionPosition>1</interactionPosition>
 				<timeSpent>60</timeSpent>
 				<timeSpentPretty>1 min 0s</timeSpentPretty>
 				<icon />
@@ -537,7 +576,8 @@
 						<customVariablePageValue1>should not appear in events report</customVariablePageValue1>
 					</row>
 				</customVariables>
-				<eventName>La fiancée de l&amp;#039;eau</eventName>
+				<eventName>La fiancée de l'eau</eventName>
+				<interactionPosition />
 				<timeSpent>60</timeSpent>
 				<timeSpentPretty>1 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -557,7 +597,8 @@
 						<customVariablePageValue1>should not appear in events report</customVariablePageValue1>
 					</row>
 				</customVariables>
-				<eventName>La fiancée de l&amp;#039;eau</eventName>
+				<eventName>La fiancée de l'eau</eventName>
+				<interactionPosition />
 				<timeSpent>60</timeSpent>
 				<timeSpentPretty>1 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -577,7 +618,8 @@
 						<customVariablePageValue1>should not appear in events report</customVariablePageValue1>
 					</row>
 				</customVariables>
-				<eventName>La fiancée de l&amp;#039;eau</eventName>
+				<eventName>La fiancée de l'eau</eventName>
+				<interactionPosition />
 				<timeSpent>60</timeSpent>
 				<timeSpentPretty>1 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -597,7 +639,8 @@
 						<customVariablePageValue1>should not appear in events report</customVariablePageValue1>
 					</row>
 				</customVariables>
-				<eventName>La fiancée de l&amp;#039;eau</eventName>
+				<eventName>La fiancée de l'eau</eventName>
+				<interactionPosition />
 				<timeSpent>30</timeSpent>
 				<timeSpentPretty>30s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -617,7 +660,8 @@
 						<customVariablePageValue1>should not appear in events report</customVariablePageValue1>
 					</row>
 				</customVariables>
-				<eventName>La fiancée de l&amp;#039;eau</eventName>
+				<eventName>La fiancée de l'eau</eventName>
+				<interactionPosition />
 				<timeSpent>30</timeSpent>
 				<timeSpentPretty>30s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -637,8 +681,9 @@
 						<customVariablePageValue1>should not appear in events report</customVariablePageValue1>
 					</row>
 				</customVariables>
-				<eventName>La fiancée de l&amp;#039;eau</eventName>
+				<eventName>La fiancée de l'eau</eventName>
 				<eventValue>9</eventValue>
+				<interactionPosition />
 				<timeSpent>1</timeSpent>
 				<timeSpentPretty>1s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -658,8 +703,9 @@
 						<customVariablePageValue1>should not appear in events report</customVariablePageValue1>
 					</row>
 				</customVariables>
-				<eventName>La fiancée de l&amp;#039;eau</eventName>
+				<eventName>La fiancée de l'eau</eventName>
 				<eventValue>10</eventValue>
+				<interactionPosition />
 				<timeSpent>0</timeSpent>
 				<timeSpentPretty>0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -684,6 +730,7 @@
 				<pageId>9</pageId>
 				<eventCategory>CategoryTriggersGoal here</eventCategory>
 				<eventAction>This is an event without a URL</eventAction>
+				<interactionPosition />
 				<timeSpent>1499</timeSpent>
 				<timeSpentPretty>24 min 59s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -696,7 +743,9 @@
 				<pageIdAction>15</pageIdAction>
 				
 				<pageId>10</pageId>
+				<generationTimeMilliseconds>666</generationTimeMilliseconds>
 				<generationTime>0.67s</generationTime>
+				<interactionPosition>2</interactionPosition>
 				<timeSpent>60</timeSpent>
 				<timeSpentPretty>1 min 0s</timeSpentPretty>
 				<icon />
@@ -711,6 +760,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>playTrailer</eventAction>
 				<eventName>Princess Mononoke (もののけ姫)</eventName>
+				<interactionPosition />
 				<timeSpent>120</timeSpent>
 				<timeSpentPretty>2 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -725,6 +775,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>playTrailer</eventAction>
 				<eventName>Ponyo (崖の上のポニョ)</eventName>
+				<interactionPosition />
 				<timeSpent>120</timeSpent>
 				<timeSpentPretty>2 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -739,6 +790,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>playTrailer</eventAction>
 				<eventName>Spirited Away (千と千尋の神隠し)</eventName>
+				<interactionPosition />
 				<timeSpent>60</timeSpent>
 				<timeSpentPretty>1 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -753,6 +805,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>clickBuyNow</eventAction>
 				<eventName>Spirited Away (千と千尋の神隠し)</eventName>
+				<interactionPosition />
 				<timeSpent>120</timeSpent>
 				<timeSpentPretty>2 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -767,6 +820,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>playStart</eventAction>
 				<eventName>Spirited Away (千と千尋の神隠し)</eventName>
+				<interactionPosition />
 				<timeSpent>1320</timeSpent>
 				<timeSpentPretty>22 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -781,6 +835,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>play25%</eventAction>
 				<eventName>Spirited Away (千と千尋の神隠し)</eventName>
+				<interactionPosition />
 				<icon>plugins/Morpheus/images/event.png</icon>
 				
 			</row>
@@ -807,6 +862,7 @@
 		<visitDurationPretty>1 hours 0 min</visitDurationPretty>
 		<searches>0</searches>
 		<actions>16</actions>
+		<interactions>2</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -818,19 +874,19 @@
 		<languageCode>fr</languageCode>
 		<language>French</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 3.6</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>3.6</browserVersion>
 		<events>14</events>
@@ -858,11 +914,11 @@
 		<plugins>flash, java</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 		</pluginsIcons>
@@ -871,6 +927,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -886,6 +948,7 @@
 				<pageId>45</pageId>
 				<eventCategory>Movie</eventCategory>
 				<eventAction>Purchase</eventAction>
+				<interactionPosition />
 				<icon>plugins/Morpheus/images/event.png</icon>
 				
 			</row>
@@ -912,6 +975,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>0</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -923,19 +987,19 @@
 		<languageCode>fr</languageCode>
 		<language>French</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 3.6</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>3.6</browserVersion>
 		<events>1</events>
@@ -963,7 +1027,7 @@
 		<plugins>director</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/director.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/director.png</pluginIcon>
 				<pluginName>director</pluginName>
 			</row>
 		</pluginsIcons>
@@ -972,6 +1036,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -987,6 +1057,7 @@
 				<pageId>44</pageId>
 				<eventCategory>Movie</eventCategory>
 				<eventAction>Search</eventAction>
+				<interactionPosition />
 				<icon>plugins/Morpheus/images/event.png</icon>
 				
 			</row>
@@ -1013,6 +1084,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>0</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -1024,19 +1096,19 @@
 		<languageCode>fr</languageCode>
 		<language>French</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 3.6</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>3.6</browserVersion>
 		<events>1</events>
@@ -1064,7 +1136,7 @@
 		<plugins>director</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/director.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/director.png</pluginIcon>
 				<pluginName>director</pluginName>
 			</row>
 		</pluginsIcons>
@@ -1073,6 +1145,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -1089,6 +1167,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>play50%</eventAction>
 				<eventName>Spirited Away (千と千尋の神隠し)</eventName>
+				<interactionPosition />
 				<timeSpent>1320</timeSpent>
 				<timeSpentPretty>22 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -1103,6 +1182,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>play75%</eventAction>
 				<eventName>Spirited Away (千と千尋の神隠し)</eventName>
+				<interactionPosition />
 				<timeSpent>420</timeSpent>
 				<timeSpentPretty>7 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -1117,6 +1197,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>Search</eventAction>
 				<eventName>Search query here</eventName>
+				<interactionPosition />
 				<timeSpent>900</timeSpent>
 				<timeSpentPretty>15 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -1131,6 +1212,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>playEnd</eventAction>
 				<eventName>Spirited Away (千と千尋の神隠し)</eventName>
+				<interactionPosition />
 				<timeSpent>120</timeSpent>
 				<timeSpentPretty>2 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -1146,6 +1228,7 @@
 				<eventAction>rating</eventAction>
 				<eventName>Spirited Away (千と千尋の神隠し)</eventName>
 				<eventValue>9.66</eventValue>
+				<interactionPosition />
 				<timeSpent>720</timeSpent>
 				<timeSpentPretty>12 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -1161,6 +1244,7 @@
 				<eventAction>event action Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long ---&gt; SHOULD APPEAR IN TEST OUTPUT NOT TRUNCATED &lt;---</eventAction>
 				<eventName>event name Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long Extremely long ---&gt; SHOULD APPEAR IN TEST OUTPUT NOT TRUNCATED &lt;---</eventName>
 				<eventValue>9.66</eventValue>
+				<interactionPosition />
 				<icon>plugins/Morpheus/images/event.png</icon>
 				
 			</row>
@@ -1187,6 +1271,7 @@
 		<visitDurationPretty>58 min 1s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>6</actions>
+		<interactions>0</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -1198,19 +1283,19 @@
 		<languageCode>fr</languageCode>
 		<language>French</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 3.6</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>3.6</browserVersion>
 		<events>6</events>
@@ -1238,7 +1323,7 @@
 		<plugins>director</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/director.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/director.png</pluginIcon>
 				<pluginName>director</pluginName>
 			</row>
 		</pluginsIcons>
@@ -1247,6 +1332,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -1262,6 +1353,7 @@
 				<pageId>42</pageId>
 				<eventCategory>Movie</eventCategory>
 				<eventAction>Search</eventAction>
+				<interactionPosition />
 				<icon>plugins/Morpheus/images/event.png</icon>
 				
 			</row>
@@ -1288,6 +1380,7 @@
 		<visitDurationPretty>0s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>1</actions>
+		<interactions>0</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -1299,19 +1392,19 @@
 		<languageCode>fr</languageCode>
 		<language>French</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 3.6</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>3.6</browserVersion>
 		<events>1</events>
@@ -1339,7 +1432,7 @@
 		<plugins>director</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/director.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/director.png</pluginIcon>
 				<pluginName>director</pluginName>
 			</row>
 		</pluginsIcons>
@@ -1348,6 +1441,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -1369,7 +1468,8 @@
 						<customVariablePageValue1>should not appear in events report</customVariablePageValue1>
 					</row>
 				</customVariables>
-				<eventName>La fiancée de l&amp;#039;eau</eventName>
+				<eventName>La fiancée de l'eau</eventName>
+				<interactionPosition />
 				<timeSpent>60</timeSpent>
 				<timeSpentPretty>1 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -1389,7 +1489,8 @@
 						<customVariablePageValue1>should not appear in events report</customVariablePageValue1>
 					</row>
 				</customVariables>
-				<eventName>La fiancée de l&amp;#039;eau</eventName>
+				<eventName>La fiancée de l'eau</eventName>
+				<interactionPosition />
 				<timeSpent>60</timeSpent>
 				<timeSpentPretty>1 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -1409,7 +1510,8 @@
 						<customVariablePageValue1>should not appear in events report</customVariablePageValue1>
 					</row>
 				</customVariables>
-				<eventName>La fiancée de l&amp;#039;eau</eventName>
+				<eventName>La fiancée de l'eau</eventName>
+				<interactionPosition />
 				<timeSpent>60</timeSpent>
 				<timeSpentPretty>1 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -1429,7 +1531,8 @@
 						<customVariablePageValue1>should not appear in events report</customVariablePageValue1>
 					</row>
 				</customVariables>
-				<eventName>La fiancée de l&amp;#039;eau</eventName>
+				<eventName>La fiancée de l'eau</eventName>
+				<interactionPosition />
 				<timeSpent>30</timeSpent>
 				<timeSpentPretty>30s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -1449,7 +1552,8 @@
 						<customVariablePageValue1>should not appear in events report</customVariablePageValue1>
 					</row>
 				</customVariables>
-				<eventName>La fiancée de l&amp;#039;eau</eventName>
+				<eventName>La fiancée de l'eau</eventName>
+				<interactionPosition />
 				<timeSpent>30</timeSpent>
 				<timeSpentPretty>30s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -1469,8 +1573,9 @@
 						<customVariablePageValue1>should not appear in events report</customVariablePageValue1>
 					</row>
 				</customVariables>
-				<eventName>La fiancée de l&amp;#039;eau</eventName>
+				<eventName>La fiancée de l'eau</eventName>
 				<eventValue>9</eventValue>
+				<interactionPosition />
 				<timeSpent>1</timeSpent>
 				<timeSpentPretty>1s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -1490,8 +1595,9 @@
 						<customVariablePageValue1>should not appear in events report</customVariablePageValue1>
 					</row>
 				</customVariables>
-				<eventName>La fiancée de l&amp;#039;eau</eventName>
+				<eventName>La fiancée de l'eau</eventName>
 				<eventValue>10</eventValue>
+				<interactionPosition />
 				<timeSpent>1499</timeSpent>
 				<timeSpentPretty>24 min 59s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -1504,7 +1610,9 @@
 				<pageIdAction>15</pageIdAction>
 				
 				<pageId>33</pageId>
+				<generationTimeMilliseconds>666</generationTimeMilliseconds>
 				<generationTime>0.67s</generationTime>
+				<interactionPosition>1</interactionPosition>
 				<timeSpent>60</timeSpent>
 				<timeSpentPretty>1 min 0s</timeSpentPretty>
 				<icon />
@@ -1519,6 +1627,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>playTrailer</eventAction>
 				<eventName>Princess Mononoke (もののけ姫)</eventName>
+				<interactionPosition />
 				<timeSpent>120</timeSpent>
 				<timeSpentPretty>2 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -1533,6 +1642,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>playTrailer</eventAction>
 				<eventName>Ponyo (崖の上のポニョ)</eventName>
+				<interactionPosition />
 				<timeSpent>120</timeSpent>
 				<timeSpentPretty>2 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -1547,6 +1657,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>playTrailer</eventAction>
 				<eventName>Spirited Away (千と千尋の神隠し)</eventName>
+				<interactionPosition />
 				<timeSpent>60</timeSpent>
 				<timeSpentPretty>1 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -1561,6 +1672,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>clickBuyNow</eventAction>
 				<eventName>Spirited Away (千と千尋の神隠し)</eventName>
+				<interactionPosition />
 				<timeSpent>120</timeSpent>
 				<timeSpentPretty>2 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -1575,6 +1687,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>playStart</eventAction>
 				<eventName>Spirited Away (千と千尋の神隠し)</eventName>
+				<interactionPosition />
 				<timeSpent>1320</timeSpent>
 				<timeSpentPretty>22 min 0s</timeSpentPretty>
 				<icon>plugins/Morpheus/images/event.png</icon>
@@ -1589,6 +1702,7 @@
 				<eventCategory>Movie</eventCategory>
 				<eventAction>play25%</eventAction>
 				<eventName>Spirited Away (千と千尋の神隠し)</eventName>
+				<interactionPosition />
 				<icon>plugins/Morpheus/images/event.png</icon>
 				
 			</row>
@@ -1615,6 +1729,7 @@
 		<visitDurationPretty>59 min 1s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>14</actions>
+		<interactions>1</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -1626,19 +1741,19 @@
 		<languageCode>fr</languageCode>
 		<language>French</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 3.6</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>3.6</browserVersion>
 		<events>13</events>
@@ -1666,7 +1781,7 @@
 		<plugins>director</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/director.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/director.png</pluginIcon>
 				<pluginName>director</pluginName>
 			</row>
 		</pluginsIcons>
@@ -1675,5 +1790,11 @@
 		
 		
 		
+		<totalEcommerceRevenue>0.00</totalEcommerceRevenue>
+		<totalEcommerceConversions>0</totalEcommerceConversions>
+		<totalEcommerceItems>0</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>0.00</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>0</totalAbandonedCarts>
+		<totalAbandonedCartsItems>0</totalAbandonedCartsItems>
 	</row>
 </result>

@@ -13,9 +13,9 @@ describe("Marketplace", function () {
     this.fixture = "Piwik\\Plugins\\Marketplace\\tests\\Fixtures\\SimpleFixtureTrackFewVisits";
 
     var urlBase = '?module=Marketplace&action=overview&';
-    var paidPluginsUrl = urlBase + 'type=paid';
-    var themesUrl = urlBase + 'type=&show=themes';
-    var pluginsUrl = urlBase + 'type=';
+    var paidPluginsUrl = urlBase + 'show=premium';
+    var themesUrl = urlBase + 'show=themes';
+    var pluginsUrl = urlBase;
 
     var noLicense = 'noLicense';
     var expiredLicense = 'expiredLicense';
@@ -25,7 +25,7 @@ describe("Marketplace", function () {
     function loadPluginDetailPage(page, pluginName, isFreePlugin)
     {
         page.load(isFreePlugin ? pluginsUrl : paidPluginsUrl);
-        page.click('.panel-title [data-pluginname="' + pluginName + '"]');
+        page.click('.card-title [piwik-plugin-name="' + pluginName + '"]');
     }
 
     function captureSelector(done, screenshotName, test, selector)
@@ -90,7 +90,7 @@ describe("Marketplace", function () {
 
                 captureSelector(done, 'updates_' + mode, function (page) {
                     page.load('?module=CorePluginsAdmin&action=plugins&idSite=1&period=day&date=yesterday&activated=');
-                }, '.entityContainer:first');
+                }, '#content .card:first');
             });
         }
 
@@ -149,15 +149,6 @@ describe("Marketplace", function () {
         it('should show paid plugin details when having valid license', function (done) {
             setEnvironment(mode, validLicense);
 
-            captureWithDialog(done, 'paid_plugin_details_valid_license_' + mode, function (page) {
-                var isFree = false;
-                loadPluginDetailPage(page, 'PaidPlugin1', isFree);
-            });
-        });
-
-        it('should show paid plugin details when having valid license', function (done) {
-            setEnvironment(mode, validLicense);
-
             captureWithDialog(done, 'paid_plugin_details_valid_license_' + mode + '_installed', function (page) {
                 assumePaidPluginsActivated();
                 var isFree = false;
@@ -165,18 +156,7 @@ describe("Marketplace", function () {
             });
         });
 
-        it('should show paid plugin details when having expired license', function (done) {
-            setEnvironment(mode, expiredLicense);
-
-            captureWithDialog(done, 'paid_plugin_details_expired_license_' + mode, function (page) {
-                setEnvironment(mode, expiredLicense);
-                assumePaidPluginsActivated();
-                var isFree = false;
-                loadPluginDetailPage(page, 'PaidPlugin1', isFree);
-            });
-        });
-
-        it('should show paid plugin details when having exceeded license', function (done) {
+        it('should show paid plugin details when having valid license', function (done) {
             setEnvironment(mode, exceededLicense);
 
             captureWithDialog(done, 'paid_plugin_details_exceeded_license_' + mode, function (page) {
@@ -195,7 +175,7 @@ describe("Marketplace", function () {
         captureSelector(done, mode + '_install_all_paid_plugins_at_once', function (page) {
             page.load(pluginsUrl);
             page.click('.installAllPaidPlugins');
-        }, '.ui-dialog:visible');
+        }, '.modal.open');
     });
 
     it('should show an error message when invalid license key entered', function (done) {
@@ -205,17 +185,8 @@ describe("Marketplace", function () {
             page.load(pluginsUrl);
             page.sendKeys('#license_key', 'invalid');
             page.click('.marketplace-paid-intro'); // click outside so change event is triggered
-            page.click('#submit_license_key');
+            page.click('#submit_license_key input');
         });
-    });
-
-    it('should show a dialog showing a list of all possible plugins to install', function (done) {
-        setEnvironment(mode, validLicense);
-
-        captureSelector(done, mode + '_install_all_paid_plugins_at_once', function (page) {
-            page.load(pluginsUrl);
-            page.click('.installAllPaidPlugins');
-        }, '.ui-dialog:visible');
     });
 
     it('should show a confirmation before removing a license key', function (done) {
@@ -223,15 +194,15 @@ describe("Marketplace", function () {
 
         captureSelector(done, mode + '_remove_license_key_confirmation', function (page) {
             page.load(pluginsUrl);
-            page.click('#remove_license_key');
-        }, '.ui-dialog:visible');
+            page.click('#remove_license_key input');
+        }, '.modal.open');
     });
 
     it('should show a confirmation before removing a license key', function (done) {
         setEnvironment(mode, noLicense);
 
         captureMarketplace(done, mode + '_remove_license_key_confirmed', function (page) {
-            page.click('.ui-dialog button:contains(Yes)')
+            page.click('.modal.open .modal-footer a:contains(Yes)')
         });
     });
 
@@ -241,10 +212,10 @@ describe("Marketplace", function () {
         captureMarketplace(done, mode + '_valid_license_key_entered', function (page) {
             page.load(pluginsUrl);
             page.sendKeys('#license_key', 'valid');
-            page.callMethod(function () {
+            page.execCallback(function () {
                 setEnvironment(mode, validLicense);
             });
-            page.click('#submit_license_key');
+            page.click('#submit_license_key input');
         });
     });
 
@@ -282,6 +253,7 @@ describe("Marketplace", function () {
         // when there is no license it should not show a warning! as it could be due to network problems etc
         it('should show a warning if license is ' + consumer, function (done) {
             setEnvironment('superuser', consumer);
+
             assumePaidPluginsActivated();
 
             captureSelector(done, 'notification_plugincheck_' + consumer, function (page) {

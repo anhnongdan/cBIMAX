@@ -189,14 +189,6 @@ class UrlHelperTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('localhost', UrlHelper::getHostFromUrl('localhost/path'));
         $this->assertEquals('sub.localhost', UrlHelper::getHostFromUrl('sub.localhost/path'));
         $this->assertEquals('sub.localhost', UrlHelper::getHostFromUrl('http://sub.localhost/path/?query=test'));
-
-        if(SystemTestCase::isPhpVersion53()) {
-            //parse_url was fixed in 5,4,7
-            //  Fixed host recognition when scheme is omitted and a leading component separator is present.
-            // http://php.net/parse_url
-            return;
-        }
-
         $this->assertEquals('localhost', UrlHelper::getHostFromUrl('//localhost/path'));
         $this->assertEquals('localhost', UrlHelper::getHostFromUrl('//localhost/path?test=test2'));
         $this->assertEquals('example.org', UrlHelper::getHostFromUrl('//example.org/path'));
@@ -242,4 +234,64 @@ class UrlHelperTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('add=foo', UrlHelper::getQueryFromUrl('/', array('add' => 'foo')));
         $this->assertEquals('add[]=foo&add[]=test', UrlHelper::getQueryFromUrl('/', array('add' => array('foo', 'test'))));
     }
+    
+    
+    /**
+     * Dataprovider for testGetQueryStringWithExcludedParameters
+     */
+    public function getQueryParameters()
+    {
+        return array(
+            array(
+                'p1=v1&p2=v2',                      //expected
+                array('p1'=>'v1', 'p2'=>'v2'),      //queryParameters
+                array()                             //parametersToExclude
+            ),
+            array(
+                'p2=v2', 
+                array('p1'=>'v1', 'p2'=>'v2'),
+                array('p1')
+            ),
+            array(
+                'p1=v1&p2=v2', 
+                array('p1'=>'v1', 'p2'=>'v2', 'sessionId'=>'HHSJHERTG'),
+                array('sessionId')
+            ),
+            array(
+                'p1=v1&p2=v2', 
+                array('p1'=>'v1', 'p2'=>'v2', 'sessionId'=>'HHSJHERTG'),
+                array('/session/')
+            ),
+            array(
+                'p1=v1&p2=v2', 
+                array('p1'=>'v1', 'sessionId'=>'HHSJHERTG', 'p2'=>'v2', 'token'=>'RYUN36HSAO'),
+                array('/[session|token]/')
+            ),
+            array(
+                '', 
+                array('p1'=>'v1', 'p2'=>'v2', 'sessionId'=>'HHSJHERTG', 'token'=>'RYUN36HSAO'),
+                array('/.*/')
+            ),
+            array(
+                'p2=v2&p4=v4', 
+                array('p1'=>'v1', 'p2'=>'v2', 'p3'=>'v3', 'p4'=>'v4'),
+                array('/p[1|3]/')
+            ),
+            array(
+                'p2=v2&p4=v4', 
+                array('p1'=>'v1', 'p2'=>'v2', 'p3'=>'v3', 'p4'=>'v4', 'utm_source'=>'gekko', 'utm_medium'=>'email', 'utm_campaign'=>'daily'),
+                array('/p[1|3]/', '/utm_/')
+            )
+        );
+    }
+    
+    /**
+     * @dataProvider getQueryParameters
+     * @group Core
+     */
+    public function testGetQueryStringWithExcludedParameters($expected, $queryParameters, $parametersToExclude)
+    {
+        $this->assertEquals($expected, UrlHelper::getQueryStringWithExcludedParameters($queryParameters, $parametersToExclude));
+    }
+    
 }

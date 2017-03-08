@@ -25,7 +25,7 @@
 						<quantity>2</quantity>
 					</row>
 				</itemDetails>
-				<icon>plugins/Morpheus/images/ecommerceOrder.gif</icon>
+				<icon>plugins/Morpheus/images/ecommerceOrder.png</icon>
 				
 			</row>
 			<row>
@@ -40,7 +40,7 @@
 				
 				<itemDetails>
 				</itemDetails>
-				<icon>plugins/Morpheus/images/ecommerceOrder.gif</icon>
+				<icon>plugins/Morpheus/images/ecommerceOrder.png</icon>
 				
 			</row>
 		</actionDetails>
@@ -53,19 +53,20 @@
 		
 		<userId />
 		<visitorType>returningCustomer</visitorType>
-		<visitorTypeIcon>plugins/Live/images/returningVisitor.gif</visitorTypeIcon>
+		<visitorTypeIcon>plugins/Live/images/returningVisitor.png</visitorTypeIcon>
 		<visitConverted>1</visitConverted>
 		<visitConvertedIcon>plugins/Morpheus/images/goal.png</visitConvertedIcon>
 		<visitCount>1</visitCount>
 		
 		<visitEcommerceStatus>ordered</visitEcommerceStatus>
-		<visitEcommerceStatusIcon>plugins/Morpheus/images/ecommerceOrder.gif</visitEcommerceStatusIcon>
+		<visitEcommerceStatusIcon>plugins/Morpheus/images/ecommerceOrder.png</visitEcommerceStatusIcon>
 		<daysSinceFirstVisit>0</daysSinceFirstVisit>
 		<daysSinceLastEcommerceOrder>0</daysSinceLastEcommerceOrder>
 		<visitDuration>363</visitDuration>
 		<visitDurationPretty>6 min 3s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>0</actions>
+		<interactions>0</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -77,19 +78,19 @@
 		<languageCode>pl</languageCode>
 		<language>Polish</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 3.6</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>3.6</browserVersion>
 		<events>0</events>
@@ -125,11 +126,11 @@
 		<plugins>flash, java</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 		</pluginsIcons>
@@ -138,6 +139,12 @@
 		
 		
 		
+		<totalEcommerceRevenue>13351.11</totalEcommerceRevenue>
+		<totalEcommerceConversions>4</totalEcommerceConversions>
+		<totalEcommerceItems>12</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>7530.33</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>3</totalAbandonedCarts>
+		<totalAbandonedCartsItems>12</totalAbandonedCartsItems>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -170,6 +177,7 @@
 						<customVariablePageValue5 />
 					</row>
 				</customVariables>
+				<interactionPosition>1</interactionPosition>
 				<timeSpent>180</timeSpent>
 				<timeSpentPretty>3 min 0s</timeSpentPretty>
 				<icon />
@@ -200,6 +208,7 @@
 						<customVariablePageValue5 />
 					</row>
 				</customVariables>
+				<interactionPosition>2</interactionPosition>
 				<timeSpent>180</timeSpent>
 				<timeSpentPretty>3 min 0s</timeSpentPretty>
 				<icon />
@@ -226,6 +235,7 @@
 						<customVariablePageValue5>Category TWO LEFT in cart</customVariablePageValue5>
 					</row>
 				</customVariables>
+				<interactionPosition>3</interactionPosition>
 				<timeSpent>361</timeSpent>
 				<timeSpentPretty>6 min 1s</timeSpentPretty>
 				<icon />
@@ -259,7 +269,7 @@
 						<quantity>2</quantity>
 					</row>
 				</itemDetails>
-				<icon>plugins/Morpheus/images/ecommerceAbandonedCart.gif</icon>
+				<icon>plugins/Morpheus/images/ecommerceAbandonedCart.png</icon>
 				
 			</row>
 		</actionDetails>
@@ -272,19 +282,20 @@
 		
 		<userId />
 		<visitorType>returningCustomer</visitorType>
-		<visitorTypeIcon>plugins/Live/images/returningVisitor.gif</visitorTypeIcon>
+		<visitorTypeIcon>plugins/Live/images/returningVisitor.png</visitorTypeIcon>
 		<visitConverted>1</visitConverted>
 		<visitConvertedIcon>plugins/Morpheus/images/goal.png</visitConvertedIcon>
 		<visitCount>1</visitCount>
 		
 		<visitEcommerceStatus>orderedThenAbandonedCart</visitEcommerceStatus>
-		<visitEcommerceStatusIcon>plugins/Morpheus/images/ecommerceOrder.gif</visitEcommerceStatusIcon>
+		<visitEcommerceStatusIcon>plugins/Morpheus/images/ecommerceOrder.png</visitEcommerceStatusIcon>
 		<daysSinceFirstVisit>0</daysSinceFirstVisit>
 		<daysSinceLastEcommerceOrder>1</daysSinceLastEcommerceOrder>
 		<visitDuration>1081</visitDuration>
 		<visitDurationPretty>18 min 1s</visitDurationPretty>
 		<searches>0</searches>
 		<actions>3</actions>
+		<interactions>3</interactions>
 		<referrerType>direct</referrerType>
 		<referrerTypeName>Direct Entry</referrerTypeName>
 		<referrerName />
@@ -296,19 +307,19 @@
 		<languageCode>pl</languageCode>
 		<language>Polish</language>
 		<deviceType>Desktop</deviceType>
-		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.gif</deviceTypeIcon>
+		<deviceTypeIcon>plugins/DevicesDetection/images/screens/normal.png</deviceTypeIcon>
 		<deviceBrand>Unknown</deviceBrand>
 		<deviceModel />
 		<operatingSystem>Windows XP</operatingSystem>
 		<operatingSystemName>Windows</operatingSystemName>
-		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.gif</operatingSystemIcon>
+		<operatingSystemIcon>plugins/DevicesDetection/images/os/WIN.png</operatingSystemIcon>
 		<operatingSystemCode>WIN</operatingSystemCode>
 		<operatingSystemVersion>XP</operatingSystemVersion>
 		<browserFamily>Gecko</browserFamily>
 		<browserFamilyDescription>Gecko (Firefox)</browserFamilyDescription>
 		<browser>Firefox 3.6</browser>
 		<browserName>Firefox</browserName>
-		<browserIcon>plugins/DevicesDetection/images/browsers/FF.gif</browserIcon>
+		<browserIcon>plugins/DevicesDetection/images/browsers/FF.png</browserIcon>
 		<browserCode>FF</browserCode>
 		<browserVersion>3.6</browserVersion>
 		<events>0</events>
@@ -344,11 +355,11 @@
 		<plugins>flash, java</plugins>
 		<pluginsIcons>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/flash.png</pluginIcon>
 				<pluginName>flash</pluginName>
 			</row>
 			<row>
-				<pluginIcon>plugins/DevicePlugins/images/plugins/java.gif</pluginIcon>
+				<pluginIcon>plugins/DevicePlugins/images/plugins/java.png</pluginIcon>
 				<pluginName>java</pluginName>
 			</row>
 		</pluginsIcons>
@@ -357,5 +368,11 @@
 		
 		
 		
+		<totalEcommerceRevenue>13351.11</totalEcommerceRevenue>
+		<totalEcommerceConversions>4</totalEcommerceConversions>
+		<totalEcommerceItems>12</totalEcommerceItems>
+		<totalAbandonedCartsRevenue>7530.33</totalAbandonedCartsRevenue>
+		<totalAbandonedCarts>3</totalAbandonedCarts>
+		<totalAbandonedCartsItems>12</totalAbandonedCartsItems>
 	</row>
 </result>
