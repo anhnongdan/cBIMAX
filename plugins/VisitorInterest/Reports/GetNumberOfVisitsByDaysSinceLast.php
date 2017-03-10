@@ -29,13 +29,23 @@ class GetNumberOfVisitsByDaysSinceLast extends Base
         $this->constantRowsCount = true;
         $this->order = 30;
 
-        $this->subcategoryId = 'VisitorInterest_Engagement';
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $this->subcategoryId = 'VisitorInterest_Engagement';
+        }        
     }
 
     public function configureWidgets(WidgetsList $widgetsList, ReportWidgetFactory $factory)
     {
-        $widget = $factory->createWidget()->setName('VisitorInterest_WidgetVisitsByDaysSinceLast');
-        $widgetsList->addWidgetConfig($widget);
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $widget = $factory->createWidget()->setName('VisitorInterest_WidgetVisitsByDaysSinceLast');
+            $widgetsList->addWidgetConfig($widget);
+        }
     }
 
     public function configureView(ViewDataTable $view)

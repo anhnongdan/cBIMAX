@@ -42,25 +42,36 @@ class Get extends \Piwik\Plugin\Report
             'max_actions_returning'
         );
         $this->order = 40;
-        $this->subcategoryId = 'VisitorInterest_Engagement';
+     
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $this->subcategoryId = 'VisitorInterest_Engagement';
+        }
     }
 
     public function configureWidgets(WidgetsList $widgetsList, ReportWidgetFactory $factory)
     {
-        $widgetsList->addWidgetConfig(
-            $factory->createWidget()
-                ->setName('VisitFrequency_WidgetGraphReturning')
-                ->forceViewDataTable(Evolution::ID)
-                ->setAction('getEvolutionGraph')
-                ->setOrder(1)
-        );
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $widgetsList->addWidgetConfig(
+                $factory->createWidget()
+                    ->setName('VisitFrequency_WidgetGraphReturning')
+                    ->forceViewDataTable(Evolution::ID)
+                    ->setAction('getEvolutionGraph')
+                    ->setOrder(1)
+            );
 
-        $widgetsList->addWidgetConfig(
-            $factory->createWidget()
-                ->forceViewDataTable(Sparklines::ID)
-                ->setName('VisitFrequency_WidgetOverview')
-                ->setOrder(2)
-        );
+            $widgetsList->addWidgetConfig(
+                $factory->createWidget()
+                    ->forceViewDataTable(Sparklines::ID)
+                    ->setName('VisitFrequency_WidgetOverview')
+                    ->setOrder(2)
+            );
+        }
     }
 
     public function configureView(ViewDataTable $view)

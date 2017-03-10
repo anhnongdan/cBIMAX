@@ -13,7 +13,13 @@ abstract class Base extends \Piwik\Plugin\Report
     protected function init()
     {
         $this->categoryId = 'General_Visitors';
-        $this->subcategoryId = 'VisitorInterest_Engagement';
+        
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $this->subcategoryId = 'VisitorInterest_Engagement';
+        }
     }
 
 }

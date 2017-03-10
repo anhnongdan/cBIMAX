@@ -40,8 +40,12 @@ class GetEntryPageUrls extends Base
         $this->order   = 3;
 
         $this->actionToLoadSubTables = $this->action;
-
-        $this->subcategoryId = 'Actions_SubmenuPagesEntry';
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $this->subcategoryId = 'Actions_SubmenuPagesEntry';
+        }
     }
 
     public function getProcessedMetrics()

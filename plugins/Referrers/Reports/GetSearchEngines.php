@@ -24,8 +24,12 @@ class GetSearchEngines extends Base
         $this->actionToLoadSubTables = 'getKeywordsFromSearchEngineId';
         $this->hasGoalMetrics = true;
         $this->order = 7;
-
-        $this->subcategoryId = 'Referrers_SubmenuSearchEngines';
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */        
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $this->subcategoryId = 'Referrers_SubmenuSearchEngines';
+        }
     }
 
     public function configureView(ViewDataTable $view)

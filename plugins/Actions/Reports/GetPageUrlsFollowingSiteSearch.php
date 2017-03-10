@@ -22,8 +22,12 @@ class GetPageUrlsFollowingSiteSearch extends GetPageTitlesFollowingSiteSearch
         $this->name          = Piwik::translate('Actions_WidgetPageUrlsFollowingSearch');
         $this->documentation = Piwik::translate('Actions_SiteSearchFollowingPagesDoc') . '<br/>' . Piwik::translate('General_UsePlusMinusIconsDocumentation');
         $this->order = 16;
-
-        $this->subcategoryId = 'Actions_SubmenuSitesearch';
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */        
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $this->subcategoryId = 'Actions_SubmenuSitesearch';
+        }
     }
 
     public function configureView(ViewDataTable $view)

@@ -24,8 +24,12 @@ class GetSiteSearchCategories extends SiteSearchBase
         $this->documentation = Piwik::translate('Actions_SiteSearchCategories1') . '<br/>' . Piwik::translate('Actions_SiteSearchCategories2');
         $this->metrics       = array('nb_visits', 'nb_pages_per_search', 'exit_rate');
         $this->order = 20;
-
-        $this->subcategoryId = 'Actions_SubmenuSitesearch';
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */        
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $this->subcategoryId = 'Actions_SubmenuSitesearch';
+        }
     }
 
     protected function isEnabledForIdSites($idSites, $idSite)

@@ -35,9 +35,14 @@ class GetNumberOfVisitsPerVisitDuration extends Base
 
     public function configureWidgets(WidgetsList $widgetsList, ReportWidgetFactory $factory)
     {
-        $widgetsList->addWidgetConfig(
-            $factory->createWidget()->setName('VisitorInterest_VisitsPerDuration')
-        );
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $widgetsList->addWidgetConfig(
+                $factory->createWidget()->setName('VisitorInterest_VisitsPerDuration')
+            );
+        }
     }
 
     public function getDefaultTypeViewDataTable()

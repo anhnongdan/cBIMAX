@@ -26,7 +26,12 @@ class GetDownloads extends Base
         $this->actionToLoadSubTables = $this->action;
         $this->order = 9;
 
-        $this->subcategoryId = 'General_Downloads';
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $this->subcategoryId = 'General_Downloads';
+        }
     }
 
     public function getMetrics()

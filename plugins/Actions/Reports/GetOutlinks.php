@@ -29,7 +29,12 @@ class GetOutlinks extends Base
 
         $this->actionToLoadSubTables = $this->action;
 
-        $this->subcategoryId = 'General_Outlinks';
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $this->subcategoryId = 'General_Outlinks';
+        }
     }
 
     public function getMetrics()

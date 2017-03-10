@@ -77,8 +77,17 @@ class GetByDayOfWeek extends Base
 
     public function getRelatedReports()
     {
-        return array(
-            ReportsProvider::factory('VisitTime', 'getVisitInformationPerLocalTime')
-        );
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            return array(
+                ReportsProvider::factory('VisitTime', 'getVisitInformationPerLocalTime')
+            );
+        } else {
+            return array(
+                ReportsProvider::factory('VisitTime', 'getVisitInformationPerServerTime')
+            );            
+        }
     }
 }

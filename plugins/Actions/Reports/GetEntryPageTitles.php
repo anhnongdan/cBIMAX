@@ -38,13 +38,22 @@ class GetEntryPageTitles extends Base
         );
         $this->order   = 6;
         $this->actionToLoadSubTables = $this->action;
-
-        $this->subcategoryId = 'Actions_SubmenuPagesEntry';
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $this->subcategoryId = 'Actions_SubmenuPagesEntry';
+        }
     }
 
     public function configureWidgets(WidgetsList $widgetsList, ReportWidgetFactory $factory)
     {
-        $widgetsList->addWidgetConfig($factory->createWidget()->setName('Actions_WidgetEntryPageTitles'));
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */        
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $widgetsList->addWidgetConfig($factory->createWidget()->setName('Actions_WidgetEntryPageTitles'));
+        }
     }
 
     public function getProcessedMetrics()

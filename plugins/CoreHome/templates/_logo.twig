@@ -1,13 +1,12 @@
 <span id="logo" class="brand-logo">
-    <a href="index.php" tabindex="-1"
-       title="{% if isCustomLogo %}{{ 'General_PoweredBy'|translate }} {% endif %}Piwik # {{ 'General_OpenSourceWebAnalytics'|translate }}"
-    >
+    <a href="index.php" tabindex="-1" 
+	title="{% if isCustomLogo %}{{ 'General_SbdCdnAnalyzer'|translate }} {% endif %}">
     {% if hasSVGLogo %}
         <img src='{{ logoSVG }}' tabindex="3"
-             alt="{% if isCustomLogo %}{{ 'General_PoweredBy'|translate }} {% endif %}Piwik"
+             alt="{% if isCustomLogo %}{{ 'General_SbdCdnAnalyzer'|translate }} {% endif %}"
              class="{% if not isCustomLogo %}default-piwik-logo{% endif %}" />
     {% else %}
-        <img src='{{ logoHeader }}' alt="{% if isCustomLogo %}{{ 'General_PoweredBy'|translate }} {% endif %}Piwik" />
+        <img src='{{ logoHeader }}' alt="{% if isCustomLogo %}{{ 'General_SbdCdnAnalyzer'|translate }} {% endif %}" />
     {% endif %}
 </a>
 </span>

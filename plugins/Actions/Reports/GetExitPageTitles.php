@@ -29,7 +29,12 @@ class GetExitPageTitles extends Base
         $this->name          = Piwik::translate('Actions_ExitPageTitles');
         $this->documentation = Piwik::translate('Actions_ExitPageTitlesReportDocumentation', '<br />')
                              . ' ' . Piwik::translate('General_UsePlusMinusIconsDocumentation');
-        $this->subcategoryId = 'Actions_SubmenuPagesExit';
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */        
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $this->subcategoryId = 'Actions_SubmenuPagesExit';
+        }
 
         $this->metrics = array('exit_nb_visits', 'nb_visits');
         $this->processedMetrics = array(
@@ -45,9 +50,14 @@ class GetExitPageTitles extends Base
 
     public function configureWidgets(WidgetsList $widgetsList, ReportWidgetFactory $factory)
     {
-        // we have to do it manually since it's only done automatically if a subcategoryId is specified,
-        // we do not set a subcategoryId since this report is not supposed to be shown in the UI
-        $widgetsList->addWidgetConfig($factory->createWidget());
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */        
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            // we have to do it manually since it's only done automatically if a subcategoryId is specified,
+            // we do not set a subcategoryId since this report is not supposed to be shown in the UI
+            $widgetsList->addWidgetConfig($factory->createWidget());
+        }
     }
 
     public function getProcessedMetrics()

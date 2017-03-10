@@ -35,9 +35,14 @@ class GetNumberOfVisitsPerPage extends Base
 
     public function configureWidgets(WidgetsList $widgetsList, ReportWidgetFactory $factory)
     {
-        $widgetsList->addWidgetConfig(
-            $factory->createWidget()->setName('VisitorInterest_VisitsPerNbOfPages')
-        );
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $widgetsList->addWidgetConfig(
+                $factory->createWidget()->setName('VisitorInterest_VisitsPerNbOfPages')
+            );
+        }
     }
 
     public function getDefaultTypeViewDataTable()

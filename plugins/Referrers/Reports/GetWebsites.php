@@ -27,8 +27,12 @@ class GetWebsites extends Base
         $this->actionToLoadSubTables = 'getUrlsFromWebsiteId';
         $this->hasGoalMetrics = true;
         $this->order = 5;
-
-        $this->subcategoryId = 'Referrers_SubmenuWebsites';
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */        
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $this->subcategoryId = 'Referrers_SubmenuWebsites';
+        }
     }
 
     public function configureView(ViewDataTable $view)

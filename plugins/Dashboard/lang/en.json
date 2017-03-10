@@ -30,7 +30,7 @@
         "SetAsDefaultWidgets": "Set as default widgets selection",
         "SetAsDefaultWidgetsConfirm": "Are you sure you want to set the current widgets selection and dashboard layout as the default dashboard template?",
         "SetAsDefaultWidgetsConfirmHelp": "This widgets selection and dashboard columns layout will be used when any user creates a new dashboard, or when \"%s\" feature is used.",
-        "TopLinkTooltip": "View Web Analytics reports for %s.",
+        "TopLinkTooltip": "View CDN Analytics reports for %s.",
         "WidgetNotFound": "Widget not found",
         "WidgetPreview": "Widget preview"
     }

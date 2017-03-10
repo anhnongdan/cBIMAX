@@ -27,14 +27,23 @@ class GetSocials extends Base
         $this->documentation = Piwik::translate('Referrers_WebsitesReportDocumentation', '<br />');
         $this->actionToLoadSubTables = 'getUrlsForSocial';
         $this->order = 11;
-
-        $this->subcategoryId = 'Referrers_SubmenuWebsites';
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */        
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $this->subcategoryId = 'Referrers_SubmenuWebsites';
+        }
     }
 
     public function configureWidgets(WidgetsList $widgetsList, ReportWidgetFactory $factory)
     {
-        $widget = $factory->createWidget()->setName('Referrers_Socials');
-        $widgetsList->addWidgetConfig($widget);
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */        
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $widget = $factory->createWidget()->setName('Referrers_Socials');
+            $widgetsList->addWidgetConfig($widget);
+        }
     }
 
     public function getDefaultTypeViewDataTable()

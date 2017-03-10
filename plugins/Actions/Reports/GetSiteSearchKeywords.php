@@ -33,7 +33,12 @@ class GetSiteSearchKeywords extends SiteSearchBase
             new AveragePageGenerationTime()
         );
         $this->order = 15;
-        $this->subcategoryId = 'Actions_SubmenuSitesearch';
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */        
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $this->subcategoryId = 'Actions_SubmenuSitesearch';
+        }
     }
 
     public function getMetrics()

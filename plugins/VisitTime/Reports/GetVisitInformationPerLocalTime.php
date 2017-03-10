@@ -28,8 +28,12 @@ class GetVisitInformationPerLocalTime extends Base
         $this->documentation = Piwik::translate('VisitTime_WidgetLocalTimeDocumentation', array('<strong>', '</strong>'));
         $this->constantRowsCount = true;
         $this->order = 15;
-
-        $this->subcategoryId = 'VisitTime_SubmenuTimes';
+        /**
+         * [Thangnt 2017-03-10] Deregister unused subcategory for cBimax
+         */
+        if (\Piwik\Config::getInstance()->General['bimax_product'] != 'cbimax') {
+            $this->subcategoryId = 'VisitTime_SubmenuTimes';
+        }
     }
 
     public function configureView(ViewDataTable $view)
