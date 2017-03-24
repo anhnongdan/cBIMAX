@@ -43,6 +43,19 @@
 	url = https://github.com/piwik/plugin-Bandwidth.git
     branch = master
 
+[submodule "tests/travis"]
+    path = src/tests/travis
+    url = https://github.com/piwik/travis-scripts.git
+    branch = master
+[submodule "vendor/facebook/xhprof"]
+        path = src/vendor/facebook/xhprof
+        url = https://github.com/phacility/xhprof.git
+    branch = master
+[submodule "misc/log-analytics"]
+    path = src/misc/log-analytics
+    url = https://github.com/piwik/piwik-log-analytics.git
+    branch = master
+
 # Add new Plugin submodule above this line ^^
 # 
 # Note: when you add a submodule that SHOULD be left in the packaged release such as the few submodules below,
