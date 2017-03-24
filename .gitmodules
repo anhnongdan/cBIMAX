@@ -1,7 +1,3 @@
-[submodule "BimaxCore"]
-	path = BimaxCore
-	url = https://github.com/anhnongdan/BimaxCore.git
-	branch = core_dev
 [submodule "plugins/QoS"]
 	path = plugins/QoS
 	url = https://github.com/vutranvn/QoS.git
