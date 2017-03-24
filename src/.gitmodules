@@ -1,0 +1,20 @@
+[submodule "tests/travis"]
+    path = tests/travis
+    url = https://github.com/piwik/travis-scripts.git
+    branch = master
+[submodule "vendor/facebook/xhprof"]
+        path = vendor/facebook/xhprof
+        url = https://github.com/phacility/xhprof.git
+    branch = master
+
+# Add new Plugin submodule above this line ^^
+# 
+# Note: when you add a submodule that SHOULD be left in the packaged release such as the few submodules below,
+#       then you MUST add these submodules names in the SUBMODULES_PACKAGED_WITH_CORE variable in:
+#       https://github.com/piwik/piwik-package/blob/master/scripts/build-package.sh
+[submodule "misc/log-analytics"]
+    path = misc/log-analytics
+    url = https://github.com/piwik/piwik-log-analytics.git
+    branch = master
+
+# Note: do not add new plugin submodules here, but a few lines above
