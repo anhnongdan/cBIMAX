@@ -141,6 +141,7 @@ disable_merged_assets = 0
 time_limit = 600
 my_period = 600
 my_nperiod_back = 2
+bimax_product = 'cbimax'
 
 ; the following settings control whether Unique Visitors `nb_uniq_visitors` and Unique users `nb_users` will be processed for different period types.
 ; year and range periods are disabled by default, to ensure optimal performance for high traffic Piwik instances
