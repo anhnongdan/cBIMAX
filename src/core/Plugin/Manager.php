@@ -451,7 +451,7 @@ class Manager
      */
     public function installLoadedPlugins()
     {
-        Log::debug("Loaded plugins: " . implode(", ", array_keys($this->getLoadedPlugins())));
+        //Log::debug("Loaded plugins: " . implode(", ", array_keys($this->getLoadedPlugins())));
         
         foreach ($this->getLoadedPlugins() as $plugin) {
             $this->installPluginIfNecessary($plugin);
