@@ -206,8 +206,18 @@ class Controller extends \Piwik\Plugin\Controller
         // remove password reset entry if it exists
         $this->passwordResetter->removePasswordResetInfo($login);
 
+        // [Thangnt 2017-07-14] On behalf: Vutt
+        // redirect to home_url configured on config.ini.php
+        // this solve the problem of wrong redirect url after login
+        // config.ini.php: home_url=pwx
         if (empty($urlToRedirect)) {
+            $homeUrl = @Config::getInstance()->General['home_url'];
             $urlToRedirect = Url::getCurrentUrlWithoutQueryString();
+            if (strpos($urlToRedirect, 'index.php') !== false) {
+                $urlToRedirect = str_replace("/index.php", $homeUrl . "/index.php", $urlToRedirect);
+            } else {
+                $urlToRedirect .= $homeUrl;
+            }
         }
 
         Url::redirectToUrl($urlToRedirect);
