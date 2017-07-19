@@ -68,8 +68,9 @@ class Updater
      */
     public function isNewVersionAvailable()
     {
-        $latestVersion = self::getLatestVersion();
-        return $latestVersion && version_compare(Version::VERSION, $latestVersion) === -1;
+	return false;
+        //$latestVersion = self::getLatestVersion();
+        //return $latestVersion && version_compare(Version::VERSION, $latestVersion) === -1;
     }
 
     /**
