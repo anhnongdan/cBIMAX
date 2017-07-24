@@ -1,6 +1,6 @@
 [submodule "plugins/QoS"]
 	path = plugins/QoS
-	url = https://github.com/vutranvn/QoS.git
+	url = https://github.com/anhnongdan/QoS.git
 	branch = ver-3.x
 [submodule "plugins/SecurityInfo"]
     path = plugins/SecurityInfo
