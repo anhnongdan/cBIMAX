@@ -113,7 +113,8 @@ class API extends \Piwik\Plugin\API
      */
     public function getRollUps()
     {
-        Piwik::checkUserHasSuperUserAccess();
+	// [Thangnt 2017-07-24] No need for super access
+        //Piwik::checkUserHasSuperUserAccess();
 
         $rollUps = array();
 
