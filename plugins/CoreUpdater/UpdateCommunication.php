@@ -117,6 +117,7 @@ class UpdateCommunication
 
     protected function isNewVersionAvailable()
     {
+	return false;
         UpdateCheck::check();
 
         $hasUpdate = UpdateCheck::isNewestVersionAvailable();
@@ -156,7 +157,7 @@ class UpdateCommunication
             $version = trim($version);
         }
 
-        return $version;
+        return Version::VERSION;
     }
 
     private function getLatestVersionSent()
