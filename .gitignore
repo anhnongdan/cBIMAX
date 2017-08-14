@@ -2,4 +2,4 @@
 /misc/*.dat.gz
 /misc/*.tar.gz
 
-.htaccess
+*.htaccess
