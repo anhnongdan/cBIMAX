@@ -61,7 +61,7 @@
         "ColumnMaxActions": "Maximum actions in one visit",
         "ColumnNbActions": "Actions",
         "ColumnNbActionsDocumentation": "The number of actions performed by your visitors. Actions can be page views, internal site searches, downloads or outlinks.",
-        "ColumnNbUniqVisitors": "Unique visitors",
+        "ColumnNbUniqVisitors": "Visits",
         "ColumnNbUniqVisitorsDocumentation": "The number of unduplicated visitors coming to your website. Every user is only counted once, even if they visit the website multiple times a day.",
         "ColumnNbUsers": "Users",
         "ColumnNbUsersDocumentation": "The number of users logged in your website. It is the number of unique active users that have a User ID set (via the Tracking code function 'setUserId').",

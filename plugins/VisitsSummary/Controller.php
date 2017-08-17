@@ -57,6 +57,11 @@ class Controller extends \Piwik\Plugin\Controller
         return FrontController::getInstance()->fetchDispatch('CoreHome', 'renderWidgetContainer');
     }
 
+    
+    /**
+     * [Thangnt 2017-08-15] Try out, remove irrelevant metrics
+     * @return type
+     */
     public function getEvolutionGraph()
     {
         $columns = Common::getRequestVar('columns', false);
@@ -85,26 +90,27 @@ class Controller extends \Piwik\Plugin\Controller
         $selectableColumns = array(
             // columns from VisitsSummary.get
             'nb_visits',
-            'nb_uniq_visitors',
-            'nb_users',
+            //'nb_uniq_visitors',
+            //'nb_users',
             'avg_time_on_site',
-            'bounce_rate',
+            //'bounce_rate',
             'nb_actions_per_visit',
             'max_actions',
-            'nb_visits_converted',
+            //'nb_visits_converted',
             // columns from Actions.get
             'nb_pageviews',
             'nb_uniq_pageviews',
-            'nb_downloads',
-            'nb_uniq_downloads',
-            'nb_outlinks',
-            'nb_uniq_outlinks',
+            //'nb_downloads',
+            //'nb_uniq_downloads',
+            //'nb_outlinks',
+            //'nb_uniq_outlinks',
             'avg_time_generation'
         );
 
         $idSite = Common::getRequestVar('idSite');
-        $displaySiteSearch = Site::isSiteSearchEnabledFor($idSite);
-
+        //$displaySiteSearch = Site::isSiteSearchEnabledFor($idSite);
+        $displaySiteSearch = false;
+        
         if ($displaySiteSearch) {
             $selectableColumns[] = 'nb_searches';
             $selectableColumns[] = 'nb_keywords';

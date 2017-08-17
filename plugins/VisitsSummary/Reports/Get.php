@@ -26,6 +26,11 @@ use Piwik\SettingsPiwik;
 use Piwik\Site;
 use Piwik\Widget\WidgetsList;
 
+/**
+ * [Thangnt 2017-08-17] Remove irrelevant metrics for CDN
+ * This applied only for cBimax.
+ */
+
 class Get extends \Piwik\Plugin\Report
 {
     private $usersColumn = 'nb_users';
@@ -42,9 +47,9 @@ class Get extends \Piwik\Plugin\Report
             new AverageTimeOnSite()
         );
         $this->metrics = array(
-            'nb_uniq_visitors',
+            //'nb_uniq_visitors',
             'nb_visits',
-            $this->usersColumn,
+            //$this->usersColumn,
             'nb_actions',
             'max_actions'
         );
@@ -111,19 +116,21 @@ class Get extends \Piwik\Plugin\Report
                     $firstRow->setColumn('avg_time_generation', $avgGenerationTime);
                 }
 
-                $numberMetrics = array('nb_visits', 'nb_uniq_visitors', 'nb_users', 'nb_actions',
-                                       'nb_pageviews', 'nb_uniq_pageviews', 'nb_searches', 'nb_keywords', 'nb_downloads',
-                                       'nb_uniq_downloads', 'nb_outlinks', 'nb_uniq_outlinks', 'max_actions');
+//                $numberMetrics = array('nb_visits', 'nb_uniq_visitors', 'nb_users', 'nb_actions',
+//                                       'nb_pageviews', 'nb_uniq_pageviews', 'nb_searches', 'nb_keywords', 'nb_downloads',
+//                                       'nb_uniq_downloads', 'nb_outlinks', 'nb_uniq_outlinks', 'max_actions');
+                $numberMetrics = array('nb_visits', 'nb_actions',
+                                       'nb_pageviews', 'nb_uniq_pageviews', 'max_actions');
                 foreach ($numberMetrics as $metric) {
                     $value = $firstRow->getColumn($metric);
                     if (false !== $value) {
                         $firstRow->setColumn($metric, $numberFormatter->formatNumber($value));
                     }
                 }
-                $value = $firstRow->getColumn('bounce_rate');
-                if (false !== $value) {
-                    $firstRow->setColumn('bounce_rate', $numberFormatter->formatPercent($value, $precision = 1));
-                }
+//                $value = $firstRow->getColumn('bounce_rate');
+//                if (false !== $value) {
+//                  $  $firstRow->setColumn('bounce_rate', $numberFormatter->formatPercent($value, $precision = 1));
+//                }
                 $value = $firstRow->getColumn('nb_actions_per_visit');
                 if (false !== $value) {
                     $firstRow->setColumn('nb_actions_per_visit', $numberFormatter->formatNumber($value, $maxFraction = 1));
@@ -180,28 +187,28 @@ class Get extends \Piwik\Plugin\Report
             $view->config->addPlaceholder(10);
         }
 
-        $userId = new UserId();
-        if ($userId->isUsedInAtLeastOneSite(array($currentIdSite), $currentPeriod, $currentDate)) {
-            $view->config->addSparklineMetric(array('nb_users'), 30);
-            $view->config->addPlaceholder(31);
-        }
+//        $userId = new UserId();
+//        if ($userId->isUsedInAtLeastOneSite(array($currentIdSite), $currentPeriod, $currentDate)) {
+//            $view->config->addSparklineMetric(array('nb_users'), 30);
+//            $view->config->addPlaceholder(31);
+//        }
 
         $view->config->addSparklineMetric(array('avg_time_on_site'), 40);
 
         $idSite = Common::getRequestVar('idSite');
-        if ($isActionPluginEnabled && Site::isSiteSearchEnabledFor($idSite)) {
-            $view->config->addSparklineMetric(array('nb_searches', 'nb_keywords'), 50);
-        } else {
-            // make sure to still create a div on the right side for this, just leave it empty
-            $view->config->addPlaceholder(50);
-        }
+//        if ($isActionPluginEnabled && Site::isSiteSearchEnabledFor($idSite)) {
+//            $view->config->addSparklineMetric(array('nb_searches', 'nb_keywords'), 50);
+//        } else {
+//            // make sure to still create a div on the right side for this, just leave it empty
+//            $view->config->addPlaceholder(50);
+//        }
 
-        $view->config->addSparklineMetric(array('bounce_rate'), 60);
+        //$view->config->addSparklineMetric(array('bounce_rate'), 60);
 
         if ($isActionPluginEnabled) {
             $view->config->addSparklineMetric(array('nb_downloads', 'nb_uniq_downloads'), 70);
             $view->config->addSparklineMetric(array('nb_actions_per_visit'), 71);
-            $view->config->addSparklineMetric(array('nb_outlinks', 'nb_uniq_outlinks'), 72);
+            //$view->config->addSparklineMetric(array('nb_outlinks', 'nb_uniq_outlinks'), 72);
             $view->config->addSparklineMetric(array('avg_time_generation'), 73);
             $view->config->addSparklineMetric(array('max_actions'), 74);
         }

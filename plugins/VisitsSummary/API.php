@@ -44,12 +44,14 @@ class API extends \Piwik\Plugin\API
     }
 
     /**
+     * [Thangnt 2017-08-15] Try to remove irrelevant metrics
      * @ignore
      */
     public function getColumns($period)
     {
         $columns = $this->getCoreColumns($period);
-        $columns = array_merge($columns, array('bounce_rate', 'nb_actions_per_visit', 'avg_time_on_site'));
+        //$columns = array_merge($columns, array('bounce_rate', 'nb_actions_per_visit', 'avg_time_on_site'));
+        $columns = array_merge($columns, array('nb_actions_per_visit', 'avg_time_on_site'));
         return $columns;
     }
 
@@ -58,8 +60,8 @@ class API extends \Piwik\Plugin\API
         $columns = array(
             'nb_visits',
             'nb_actions',
-            'nb_visits_converted',
-            'bounce_count',
+            //'nb_visits_converted',
+            //'bounce_count',
             'sum_visit_length',
             'max_actions'
         );
@@ -83,19 +85,19 @@ class API extends \Piwik\Plugin\API
         return $this->getNumeric($idSite, $period, $date, $segment, 'nb_visits');
     }
 
-    public function getUniqueVisitors($idSite, $period, $date, $segment = false)
-    {
-        $metric = 'nb_uniq_visitors';
-        $this->checkUniqueIsEnabledOrFail($period, $metric);
-        return $this->getNumeric($idSite, $period, $date, $segment, $metric);
-    }
-
-    public function getUsers($idSite, $period, $date, $segment = false)
-    {
-        $metric = 'nb_users';
-        $this->checkUniqueIsEnabledOrFail($period, $metric);
-        return $this->getNumeric($idSite, $period, $date, $segment, $metric);
-    }
+//    public function getUniqueVisitors($idSite, $period, $date, $segment = false)
+//    {
+//        $metric = 'nb_uniq_visitors';
+//        $this->checkUniqueIsEnabledOrFail($period, $metric);
+//        return $this->getNumeric($idSite, $period, $date, $segment, $metric);
+//    }
+//
+//    public function getUsers($idSite, $period, $date, $segment = false)
+//    {
+//        $metric = 'nb_users';
+//        $this->checkUniqueIsEnabledOrFail($period, $metric);
+//        return $this->getNumeric($idSite, $period, $date, $segment, $metric);
+//    }
 
     public function getActions($idSite, $period, $date, $segment = false)
     {
