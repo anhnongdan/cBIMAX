@@ -98,8 +98,8 @@ class Controller extends \Piwik\Plugin\Controller
             'max_actions',
             //'nb_visits_converted',
             // columns from Actions.get
-            'nb_pageviews',
-            'nb_uniq_pageviews',
+//            'nb_pageviews',
+//            'nb_uniq_pageviews',
             //'nb_downloads',
             //'nb_uniq_downloads',
             //'nb_outlinks',

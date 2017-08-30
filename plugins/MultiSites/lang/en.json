@@ -8,6 +8,6 @@
         "ColumnTotalOverallBandwidth" : "Bytes transferred overall",
         "ColumnSumBandwidth": "Sum Bandwidth",
         "ColumnAvgBandwidth": "Avg. Bandwidth",
-        "TotalVisitsPageviewsActionsBandwidth" : "(Total: %1$s visits, %2$s hits, %3$s actions, %4$s tranffered overall)"
+        "TotalVisitsPageviewsActionsBandwidth" : "(Total: %1$s sessions, %3$s hits, %4$s tranffered overall)"
     }
 }

@@ -206,7 +206,7 @@ class Get extends \Piwik\Plugin\Report
         //$view->config->addSparklineMetric(array('bounce_rate'), 60);
 
         if ($isActionPluginEnabled) {
-            $view->config->addSparklineMetric(array('nb_downloads', 'nb_uniq_downloads'), 70);
+//            $view->config->addSparklineMetric(array('nb_downloads', 'nb_uniq_downloads'), 70);
             $view->config->addSparklineMetric(array('nb_actions_per_visit'), 71);
             //$view->config->addSparklineMetric(array('nb_outlinks', 'nb_uniq_outlinks'), 72);
             $view->config->addSparklineMetric(array('avg_time_generation'), 73);
