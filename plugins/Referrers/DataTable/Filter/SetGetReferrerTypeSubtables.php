@@ -13,6 +13,7 @@ use Piwik\DataTable\Row;
 use Piwik\DataTable;
 use Piwik\Period\Range;
 use Piwik\Plugins\Referrers\API;
+use Piwik\Metrics;
 
 /**
  * Utility function that sets the subtables for the getReferrerType report.
@@ -62,6 +63,11 @@ class SetGetReferrerTypeSubtables extends DataTable\BaseFilter
 
     public function filter($table)
     {
+        //$columnsToRemove = array('nb_uniq_visitors', 'bounce_count', 'nb_visits_converted', 'nb_users');
+        $columnsToRemove = array(Metrics::INDEX_NB_UNIQ_VISITORS, Metrics::INDEX_BOUNCE_COUNT, Metrics::INDEX_NB_VISITS_CONVERTED, Metrics::INDEX_NB_CONVERSIONS, Metrics::INDEX_NB_USERS);
+        $table->filter('ColumnDelete', array($columnsToRemove));
+        \Piwik\Log::debug('table process getReferrerType: %s', implode(', ', $table->getColumns()));
+        
         foreach ($table->getRows() as $row) {
             $typeReferrer = $row->getColumn('label');
 
@@ -81,7 +87,10 @@ class SetGetReferrerTypeSubtables extends DataTable\BaseFilter
                     if ($this->expanded) {
                         $subtable->applyQueuedFilters();
                     }
-
+                    \Piwik\Log::debug('subTable when getReferrerType: %s', implode(', ', $subtable->getColumns()));
+                    $subtable->filter('ColumnDelete', array($columnsToRemove));
+                    \Piwik\Log::debug('subTable when getReferrerType after: %s', implode(', ', $subtable->getColumns()));  
+                    
                     $row->setSubtable($subtable);
                 }
             }

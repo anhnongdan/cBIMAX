@@ -39,6 +39,12 @@ class Controller extends \Piwik\Plugin\Controller
         parent::__construct();
     }
 
+    /**
+     * [Thangnt 2017-08-29] No more search engine, campaign and keywords
+     * CDN resources can't be requested from a search engine or anything a like.
+     * 
+     * @return type
+     */
     public function getSparklines()
     {
         $metrics = $this->getReferrersVisitorsByType();
@@ -110,43 +116,43 @@ class Controller extends \Piwik\Plugin\Controller
 
 
         // SEARCH ENGINES
-        $metrics['visitorsFromSearchEngines'] = $numberFormatter->formatNumber($metrics['visitorsFromSearchEngines']);
-        $values = array($metrics['visitorsFromSearchEngines']);
-        $descriptions = array(Piwik::translate('Referrers_TypeSearchEngines'));
-
-        if (!empty($metrics['visitorsFromSearchEnginesPercent'])) {
-            $metrics['visitorsFromSearchEnginesPercent'] = $numberFormatter->formatPercent($metrics['visitorsFromSearchEnginesPercent'], $precision = 1);
-            $values[] = $metrics['visitorsFromSearchEnginesPercent'];
-            $descriptions[] = Piwik::translate('Referrers_XPercentOfVisits');
-        }
-        $searchEngineParams = $this->getReferrerSparklineParams(Common::REFERRER_TYPE_SEARCH_ENGINE);
-
-        $view->config->addSparkline($searchEngineParams, $values, $descriptions, @$metrics['visitorsFromSearchEnginesEvolution']);
+//        $metrics['visitorsFromSearchEngines'] = $numberFormatter->formatNumber($metrics['visitorsFromSearchEngines']);
+//        $values = array($metrics['visitorsFromSearchEngines']);
+//        $descriptions = array(Piwik::translate('Referrers_TypeSearchEngines'));
+//
+//        if (!empty($metrics['visitorsFromSearchEnginesPercent'])) {
+//            $metrics['visitorsFromSearchEnginesPercent'] = $numberFormatter->formatPercent($metrics['visitorsFromSearchEnginesPercent'], $precision = 1);
+//            $values[] = $metrics['visitorsFromSearchEnginesPercent'];
+//            $descriptions[] = Piwik::translate('Referrers_XPercentOfVisits');
+//        }
+//        $searchEngineParams = $this->getReferrerSparklineParams(Common::REFERRER_TYPE_SEARCH_ENGINE);
+//
+//        $view->config->addSparkline($searchEngineParams, $values, $descriptions, @$metrics['visitorsFromSearchEnginesEvolution']);
 
 
         // CAMPAIGNS
-        $metrics['visitorsFromCampaigns'] = $numberFormatter->formatNumber($metrics['visitorsFromCampaigns']);
-        $values = array($metrics['visitorsFromCampaigns']);
-        $descriptions = array(Piwik::translate('Referrers_TypeCampaigns'));
-
-        if (!empty($metrics['visitorsFromCampaignsPercent'])) {
-            $metrics['visitorsFromCampaignsPercent'] = $numberFormatter->formatPercent($metrics['visitorsFromCampaignsPercent'], $precision = 1);
-            $values[] = $metrics['visitorsFromCampaignsPercent'];
-            $descriptions[] = Piwik::translate('Referrers_XPercentOfVisits');
-        }
-
-        $searchEngineParams = $this->getReferrerSparklineParams(Common::REFERRER_TYPE_CAMPAIGN);
-
-        $view->config->addSparkline($searchEngineParams, $values, $descriptions, @$metrics['visitorsFromCampaignsEvolution']);
+//        $metrics['visitorsFromCampaigns'] = $numberFormatter->formatNumber($metrics['visitorsFromCampaigns']);
+//        $values = array($metrics['visitorsFromCampaigns']);
+//        $descriptions = array(Piwik::translate('Referrers_TypeCampaigns'));
+//
+//        if (!empty($metrics['visitorsFromCampaignsPercent'])) {
+//            $metrics['visitorsFromCampaignsPercent'] = $numberFormatter->formatPercent($metrics['visitorsFromCampaignsPercent'], $precision = 1);
+//            $values[] = $metrics['visitorsFromCampaignsPercent'];
+//            $descriptions[] = Piwik::translate('Referrers_XPercentOfVisits');
+//        }
+//
+//        $searchEngineParams = $this->getReferrerSparklineParams(Common::REFERRER_TYPE_CAMPAIGN);
+//
+//        $view->config->addSparkline($searchEngineParams, $values, $descriptions, @$metrics['visitorsFromCampaignsEvolution']);
 
 
         // DISTINCT SEARCH ENGINES
-        $sparklineParams = $this->getDistinctSparklineUrlParams('getLastDistinctSearchEnginesGraph');
-        $value = $distinctMetrics['numberDistinctSearchEngines'];
-        $value = $numberFormatter->formatNumber($value);
-        $description = Piwik::translate('Referrers_DistinctSearchEngines');
-
-        $view->config->addSparkline($sparklineParams, $value, $description, @$distinctMetrics['numberDistinctSearchEnginesEvolution']);
+//        $sparklineParams = $this->getDistinctSparklineUrlParams('getLastDistinctSearchEnginesGraph');
+//        $value = $distinctMetrics['numberDistinctSearchEngines'];
+//        $value = $numberFormatter->formatNumber($value);
+//        $description = Piwik::translate('Referrers_DistinctSearchEngines');
+//
+//        $view->config->addSparkline($sparklineParams, $value, $description, @$distinctMetrics['numberDistinctSearchEnginesEvolution']);
 
 
         // DISTINCT WEBSITES
@@ -162,21 +168,21 @@ class Controller extends \Piwik\Plugin\Controller
 
 
         // DISTINCT KEYWORDS
-        $sparklineParams = $this->getDistinctSparklineUrlParams('getLastDistinctKeywordsGraph');
-        $value = $distinctMetrics['numberDistinctKeywords'];
-        $value = $numberFormatter->formatNumber($value);
-        $description = Piwik::translate('Referrers_DistinctKeywords');
-
-        $view->config->addSparkline($sparklineParams, $value, $description, @$distinctMetrics['numberDistinctKeywordsEvolution']);
+//        $sparklineParams = $this->getDistinctSparklineUrlParams('getLastDistinctKeywordsGraph');
+//        $value = $distinctMetrics['numberDistinctKeywords'];
+//        $value = $numberFormatter->formatNumber($value);
+//        $description = Piwik::translate('Referrers_DistinctKeywords');
+//
+//        $view->config->addSparkline($sparklineParams, $value, $description, @$distinctMetrics['numberDistinctKeywordsEvolution']);
 
 
         // DISTINCT CAMPAIGNS
-        $sparklineParams = $this->getDistinctSparklineUrlParams('getLastDistinctCampaignsGraph');
-        $value = $distinctMetrics['numberDistinctCampaigns'];
-        $value = $numberFormatter->formatNumber($value);
-        $description = Piwik::translate('Referrers_DistinctCampaigns');
-
-        $view->config->addSparkline($sparklineParams, $value, $description, @$distinctMetrics['numberDistinctCampaignsEvolution']);
+//        $sparklineParams = $this->getDistinctSparklineUrlParams('getLastDistinctCampaignsGraph');
+//        $value = $distinctMetrics['numberDistinctCampaigns'];
+//        $value = $numberFormatter->formatNumber($value);
+//        $description = Piwik::translate('Referrers_DistinctCampaigns');
+//
+//        $view->config->addSparkline($sparklineParams, $value, $description, @$distinctMetrics['numberDistinctCampaignsEvolution']);
 
         return $view->render();
     }

@@ -43,23 +43,27 @@ class AllColumns extends HtmlTable
 
             $columns = $dataTable->getColumns();
 
-            if (in_array('nb_uniq_visitors', $columns)) {
-                $columnsToDisplay[] = 'nb_uniq_visitors';
-            }
+//            if (in_array('nb_uniq_visitors', $columns)) {
+//                $columnsToDisplay[] = 'nb_uniq_visitors';
+//            }
 
-            if (in_array('nb_users', $columns)) {
-                $columnsToDisplay[] = 'nb_users';
-            }
+//            if (in_array('nb_users', $columns)) {
+//                $columnsToDisplay[] = 'nb_users';
+//            }
 
             $columnsToDisplay = array_merge(
-                $columnsToDisplay, array('nb_actions', 'nb_actions_per_visit', 'avg_time_on_site', 'bounce_rate')
+                //$columnsToDisplay, array('nb_actions', 'nb_actions_per_visit', 'avg_time_on_site', 'bounce_rate')
+                /**
+                 * [Thangnt 2017-08-29] remove bounce_rate
+                 */
+                $columnsToDisplay, array('nb_actions', 'nb_actions_per_visit', 'avg_time_on_site')
             );
 
             // only display conversion rate for the plugins that do not provide "per goal" metrics
             // otherwise, conversion rate is meaningless as a whole (since we don't process 'cross goals' conversions)
-            if (!$properties->show_goals) {
-                $columnsToDisplay[] = 'conversion_rate';
-            }
+//            if (!$properties->show_goals) {
+//                $columnsToDisplay[] = 'conversion_rate';
+//            }
 
             $properties->columns_to_display = $columnsToDisplay;
         });

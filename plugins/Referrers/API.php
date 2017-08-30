@@ -69,6 +69,12 @@ class API extends \Piwik\Plugin\API
     public function getReferrerType($idSite, $period, $date, $segment = false, $typeReferrer = false,
                                     $idSubtable = false, $expanded = false)
     {
+        $e = new \Exception;
+        \Piwik\Log::debug($e->getTraceAsString());
+        
+        \Piwik\Log::debug('input params: %s, %s, %s, %s, %s', $period, $segment, $typeReferrer,
+                                    $idSubtable, $expanded);
+        
         // if idSubtable is supplied, interpret idSubtable as referrer type and return correct report
         if ($idSubtable !== false) {
             $result = false;
@@ -79,9 +85,12 @@ class API extends \Piwik\Plugin\API
                 case Common::REFERRER_TYPE_WEBSITE:
                     $result = $this->getWebsites($idSite, $period, $date, $segment);
                     break;
-                case Common::REFERRER_TYPE_CAMPAIGN:
-                    $result = $this->getCampaigns($idSite, $period, $date, $segment);
-                    break;
+                /**
+                 * [Thangnt 2017-08-29] No campaign for CDN 
+                 */
+//                case Common::REFERRER_TYPE_CAMPAIGN:
+//                    $result = $this->getCampaigns($idSite, $period, $date, $segment);
+//                    break;
                 default: // invalid idSubtable, return whole report
                     break;
             }
@@ -90,6 +99,8 @@ class API extends \Piwik\Plugin\API
                 $result->filter('ColumnCallbackDeleteMetadata', array('segment'));
                 $result->filter('ColumnCallbackDeleteMetadata', array('segmentValue'));
 
+                \Piwik\Log::debug('called for idsubtable: %s', $idSubtable);
+                $this->removeMetrics($result);
                 return $this->removeSubtableIds($result); // this report won't return subtables of individual reports
             }
         }
@@ -109,7 +120,7 @@ class API extends \Piwik\Plugin\API
             'referrerType',
             array(
                 Common::REFERRER_TYPE_DIRECT_ENTRY  => 'direct',
-                Common::REFERRER_TYPE_CAMPAIGN      => 'campaign',
+                //Common::REFERRER_TYPE_CAMPAIGN      => 'campaign',
                 Common::REFERRER_TYPE_SEARCH_ENGINE => 'search',
                 Common::REFERRER_TYPE_WEBSITE       => 'website',
             )
@@ -117,9 +128,17 @@ class API extends \Piwik\Plugin\API
         // set referrer type column to readable value
         $dataTable->queueFilter('ColumnCallbackReplace', array('label', __NAMESPACE__ . '\getReferrerTypeLabel'));
 
+        //$this->removeMetrics($dataTable);
+        \Piwik\Log::debug('this called first');
         return $dataTable;
     }
 
+    protected function removeMetrics($dataTable) {
+        //$columnsToRemove = array('nb_uniq_visitors', 'bounce_count', 'nb_visits_converted', 'nb_users');
+        $columnsToRemove = array(Metrics::INDEX_NB_UNIQ_VISITORS, Metrics::INDEX_BOUNCE_COUNT, Metrics::INDEX_NB_VISITS_CONVERTED, Metrics::INDEX_NB_CONVERSIONS, Metrics::INDEX_NB_USERS);
+        $dataTable->filter('ColumnDelete', array($columnsToRemove));
+    }
+    
     /**
      * Returns a report that shows
      */
@@ -134,7 +153,8 @@ class API extends \Piwik\Plugin\API
         $dataTable = $dataTable->mergeSubtables($labelColumn = 'referer_type', $useMetadataColumn = true);
         $dataTable->queueFilter('ReplaceColumnNames');
         $dataTable->queueFilter('ReplaceSummaryRowLabel');
-
+        
+        //$this->removeMetrics($dataTable);
         return $dataTable;
     }
 
@@ -488,8 +508,12 @@ class API extends \Piwik\Plugin\API
      */
     private function removeSubtableIds($table)
     {
+        $columnsToRemove = array('nb_uniq_visitors', 'bounce_count');
+        
         if ($table instanceof DataTable\Map) {
             foreach ($table->getDataTables() as $childTable) {
+                \Piwik\Log::debug('childTable: ', implode($childTable->getColumns(),', '));
+                $this->removeMetrics($childTable);
                 $this->removeSubtableIds($childTable);
             }
         } else {
