@@ -68,13 +68,7 @@ class API extends \Piwik\Plugin\API
      */
     public function getReferrerType($idSite, $period, $date, $segment = false, $typeReferrer = false,
                                     $idSubtable = false, $expanded = false)
-    {
-        $e = new \Exception;
-        \Piwik\Log::debug($e->getTraceAsString());
-        
-        \Piwik\Log::debug('input params: %s, %s, %s, %s, %s', $period, $segment, $typeReferrer,
-                                    $idSubtable, $expanded);
-        
+    {        
         // if idSubtable is supplied, interpret idSubtable as referrer type and return correct report
         if ($idSubtable !== false) {
             $result = false;

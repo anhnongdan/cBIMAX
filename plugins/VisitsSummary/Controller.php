@@ -117,6 +117,7 @@ class Controller extends \Piwik\Plugin\Controller
         }
         // $callingAction may be specified to distinguish between
         // "VisitsSummary_WidgetLastVisits" and "VisitsSummary_WidgetOverviewGraph"
+        //Piwik\Log::debug('VisitCummary::getLastUnitGraphAcrossPlugins, show column: %s', implode(', ', $columns));
         $view = $this->getLastUnitGraphAcrossPlugins($this->pluginName, __FUNCTION__, $columns,
             $selectableColumns, $documentation);
 

@@ -272,19 +272,34 @@ class Controller extends \Piwik\Plugin\Controller
         $metaData = unserialize($request->process());
 
         $metrics = array();
+        /**
+         * [Thangnt 2017-08-30] Remove irrelevant metrics from UserCountryMap  
+         */
         if (!empty($metaData[0]['metrics']) && is_array($metaData[0]['metrics'])) {
             foreach ($metaData[0]['metrics'] as $id => $val) {
                 // todo: should use SettingsPiwik::isUniqueVisitorsEnabled ?
                 if (Common::getRequestVar('period') == 'day' || $id != 'nb_uniq_visitors') {
+                    if ($id == 'nb_uniq_visitors') {
+                        continue;
+                    }
                     $metrics[] = array($id, $val);
                 }
             }
         }
         if (!empty($metaData[0]['processedMetrics']) && is_array($metaData[0]['processedMetrics'])) {
             foreach ($metaData[0]['processedMetrics'] as $id => $val) {
+                if ($id == 'nb_uniq_visitors' || $id == 'bounce_rate' || $id == 'conversion_rate') {
+                    continue;
+                }
                 $metrics[] = array($id, $val);
             }
         }
+        
+        foreach ($metrics as $metric) {
+            \Piwik\Log::debug('UserCountryMap metrics showed: %s', implode(', ', $metric));
+        }
+        
+        //\Piwik\Log::debug('UserCountryMap metrics showed: %s', $metrics->__toString());
         return $metrics;
     }
 

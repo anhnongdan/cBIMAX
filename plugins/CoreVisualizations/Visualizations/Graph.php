@@ -95,6 +95,8 @@ abstract class Graph extends Visualization
                         'displayed' => $self->isRowVisible($rowLabel)
                     );
                 }
+                
+                \Piwik\Log::debug('CoreVisualization\Graph::selectableRows: %s', implode(', ', $self->selectableRows));
             }
         });
     }
@@ -138,12 +140,13 @@ abstract class Graph extends Visualization
         // set default selectable columns, if none specified
         $selectableColumns = $this->config->selectable_columns;
         if (false === $selectableColumns) {
-            $selectableColumns = array('nb_visits', 'nb_actions', 'nb_uniq_visitors', 'nb_users');
+            //$selectableColumns = array('nb_visits', 'nb_actions', 'nb_uniq_visitors', 'nb_users');
+            $selectableColumns = array('nb_visits', 'nb_actions');
 
-            if ($this->config->show_goals) {
-                $goalMetrics       = array('nb_conversions', 'revenue');
-                $selectableColumns = array_merge($selectableColumns, $goalMetrics);
-            }
+//            if ($this->config->show_goals) {
+//                $goalMetrics       = array('nb_conversions', 'revenue');
+//                $selectableColumns = array_merge($selectableColumns, $goalMetrics);
+//            }
         }
 
         $transformed = array();
@@ -155,6 +158,7 @@ abstract class Graph extends Visualization
             );
         }
 
+        //\Piwik\Log::debug('CoreVisualization\Graph::selectableRows: %s', implode(', ', $this->config->selectable_columns));
         $this->config->selectable_columns = $transformed;
     }
 }

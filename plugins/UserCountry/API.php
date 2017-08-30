@@ -27,6 +27,12 @@ require_once PIWIK_INCLUDE_PATH . '/plugins/UserCountry/functions.php';
  */
 class API extends \Piwik\Plugin\API
 {
+    protected function removeMetrics($dataTable) {
+        //$columnsToRemove = array('nb_uniq_visitors', 'bounce_count', 'nb_visits_converted', 'nb_users');
+        $columnsToRemove = array(Metrics::INDEX_NB_UNIQ_VISITORS, Metrics::INDEX_BOUNCE_COUNT, Metrics::INDEX_NB_VISITS_CONVERTED, Metrics::INDEX_NB_CONVERSIONS, Metrics::INDEX_NB_USERS);
+        $dataTable->filter('ColumnDelete', array($columnsToRemove));
+    }
+    
     public function getCountry($idSite, $period, $date, $segment = false)
     {
         $dataTable = $this->getDataTable(Archiver::COUNTRY_RECORD_NAME, $idSite, $period, $date, $segment);
@@ -40,6 +46,7 @@ class API extends \Piwik\Plugin\API
         $dataTable->queueFilter('ColumnCallbackAddMetadata', array(array(), 'logoWidth', function () { return 16; }));
         $dataTable->queueFilter('ColumnCallbackAddMetadata', array(array(), 'logoHeight', function () { return 11; }));
 
+        $this->removeMetrics($dataTable);
         return $dataTable;
     }
 
