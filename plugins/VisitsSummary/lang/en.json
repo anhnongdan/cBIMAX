@@ -1,12 +1,12 @@
 {
     "VisitsSummary": {
         "AverageGenerationTime": "average generation time",
-        "AverageVisitDuration": "average visit duration",
+        "AverageVisitDuration": "average session duration",
         "GenerateQueries": "%s queries executed",
         "GenerateTime": "%s seconds to serve the url",
-        "MaxNbActions": "max hits in one visit",
+        "MaxNbActions": "max hits in one session",
         "NbActionsDescription": "%s hits",
-        "NbActionsPerVisit": "hits per visit",
+        "NbActionsPerVisit": "hits per session",
         "NbDownloadsDescription": "downloads",
         "NbKeywordsDescription": "unique keywords",
         "NbOutlinksDescription": "outlinks",
@@ -15,15 +15,15 @@
         "NbUniqueDownloadsDescription": "unique downloads",
         "NbUniqueOutlinksDescription": "unique outlinks",
         "NbUniquePageviewsDescription": "unique hits",
-        "NbUniqueVisitors": "unique visitors",
+        "NbUniqueVisitors": "unique sessionors",
         "NbUsersDescription": "users",
-        "NbVisitsDescription": "visits",
-        "NbVisitsBounced": "visits have bounced (left the website after one page)",
-        "PluginDescription": "Reports general analytics metrics: visits, unique visitors, number of actions, bounce rate, etc.",
-        "VisitsSummary": "Visits Summary",
-        "VisitsSummaryDocumentation": "This is an overview of the visit evolution.",
-        "WidgetLastVisits": "Visits Over Time",
-        "WidgetOverviewGraph": "Visits Overview (with graph)",
-        "WidgetVisits": "Visits Overview"
+        "NbVisitsDescription": "sessions",
+        "NbVisitsBounced": "sessions have bounced (left the website after one page)",
+        "PluginDescription": "Reports general analytics metrics: sessions, unique sessionors, number of actions, bounce rate, etc.",
+        "VisitsSummary": "Sessions Summary",
+        "VisitsSummaryDocumentation": "This is an overview of the session evolution.",
+        "WidgetLastVisits": "Sessions Over Time",
+        "WidgetOverviewGraph": "Sessions Overview (with graph)",
+        "WidgetVisits": "Sessions Overview"
     }
 }
